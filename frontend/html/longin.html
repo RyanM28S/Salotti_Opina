@@ -5,23 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
     <header></header>
     <main id="conteudo">
-        <form id="formLogin">
-            <input type="text" id="Nome" placeholder="Nome">
-            <input type="text" id="Senha" placeholder="Senha">
-            <button type="submit">Enviar</button>
-            <p id="p"></p>
+
+        <h2 style="color:white; text-align:center;">Cadastro</h2>
+
+        <form id="formCadastro">
+            <input type="text" placeholder="Nome" id="Nome">
+            <input type="email" placeholder="Email" id="Email">
+            <input type="password" placeholder="Senha" id="senha">
+
+            <button type="submit">Cadastrar</button>
         </form>
-        <button id="cadastro">Não tem login?</button>
-    </main>
+
+        <button id="login">
+            Já tem conta? Entrar
+        </button>
     <footer></footer>
 
-    <script src="login.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
