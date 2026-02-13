@@ -4,3 +4,36 @@
   box-sizing: border-box;
 }
 
+main {
+  background-color: azure;
+}
+
+.header {
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  gap: 20rem;
+  background-color: aliceblue;
+  height: 4rem;
+  width: auto;
+  
+}
+
+ /* main */
+
+.dbemvindo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 4rem 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.d1bemvindo h1 {
+  font-size: 3rem;
+}
+
+.destaque {
+  color: blue ;
+}
