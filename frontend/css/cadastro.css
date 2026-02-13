@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #334155;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+/* Grid System */
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* Estilização do Card (Botão) */
+.card {
+    background: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Ícones */
+.icon-box {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.orange { background-color: #ff6b00; }
+.blue   { background-color: #2563eb; }
+.purple { background-color: #a855f7; }
+.green  { background-color: #10b981; }
+.yellow { background-color: #eab308; }
+.pink   { background-color: #db2777; }
+
+/* Nota do Rating */
+.rating {
+    background-color: #fef9c3;
+    color: #854d0e;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Textos do Card */
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.divider {
+    height: 1px;
+    background-color: #e2e8f0;
+    margin-bottom: 15px;
+}
+
+.reviews {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
