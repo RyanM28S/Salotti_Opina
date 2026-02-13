@@ -5,8 +5,8 @@ function renderLogin() {
         <form id="formLogin">
             <input type="text" id="Nome" placeholder="Nome">
             <input type="text" id="Senha" placeholder="Senha">
-            <button tyrar</button>
-            <p id="p"></p>pe="submit">Ent
+            <button type="submit">Enviar</button>
+            <p id="p"></p>
         </form>
         <button id="cadastro">Não tem cadastro?</button>
     `;
@@ -61,16 +61,16 @@ function renderCadastro() {
         const email = document.getElementById("Email").value;
         const p = document.getElementById("p");
 
-        if (nome === "" && senha === "" && email === "") {
-            p.textContent = "Não tem nada";
-        } else if (nome === "") {
-            p.textContent = "Não tem nome";
-        } else if (senha === "") {
-            p.textContent = "Não tem senha";
-        } else if (email === "") {
-            p.textContent = "Não tem email";
-        } else {
+        const camposVazios = [];
+
+        if (nome === "") camposVazios.push("nome");
+        if (senha === "") camposVazios.push("senha");
+        if (email === "") camposVazios.push("email");
+        
+        if (camposVazios.length === 0) {
             p.textContent = "Tem tudo";
+        } else {
+            p.textContent = "Falta: " + camposVazios.join(", ");
         }
     });
 
@@ -80,5 +80,4 @@ function renderCadastro() {
     });
 }
 
-// Inicia mostrando o login
-renderLogin();
+renderCadastro();
