@@ -1,18 +1,11 @@
 import express from "express"
-import mysql from 'mysql2'
+import db from "./db.js"
 
 const roteador = express.Router()
 
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'app_db'    
-});     
-
-function cadastrar(req,res){
-    const query = db.query("INSERT INTO usuarios(nome) VALUES (?)", [req.body.nome])
-    res.status(201).json({state: "ok"})
+async function cadastrar(req,res){
+    const [query] = await db.query("INSERT INTO usuarios(nome, senha) VALUES (?,?)", [req.body.nome, req.body.senha])
+    res.status(201).json(query)
 }
 
 roteador.post("/cadastro", cadastrar)
