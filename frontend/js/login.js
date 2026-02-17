@@ -28,7 +28,24 @@ function renderLogin() {
         } else if (senha === "") {
             p.textContent = "Não tem a senha";
         } else {
-            p.textContent = "Tem tudo";
+
+            fetch("http://localhost:3000/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify ({
+                    nome: nome,
+                    senha: senha
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                p.textContent = data.mensagem;
+            })
+            .catch(error => {
+                p.textContent = "erro no serviodr";
+            })
         }
     });
 
@@ -68,7 +85,27 @@ function renderCadastro() {
         if (email === "") camposVazios.push("email");
         
         if (camposVazios.length === 0) {
-            p.textContent = "Tem tudo";
+            fetch("http://localhost:3000/cadastro", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    nome: nome,
+                    senha: senha,
+                    email: email
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                p.textContent = "usuario cadastrado com sucesso"
+                console.log(data);
+            })
+            .catch(error => {
+                p.textContent = "erro ao cadatrar";
+                console.log(error);
+            });
+
         } else {
             p.textContent = "Falta: " + camposVazios.join(", ");
         }
