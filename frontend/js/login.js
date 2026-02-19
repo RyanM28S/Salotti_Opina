@@ -96,15 +96,20 @@ function renderCadastro() {
                     email: email
                 })
             })
-            .then(response => response.json())
+            
+            .then(response => {
+                if(!response.ok) {
+                    throw new Error("Conflito de informações");
+                }
+            return response.json()})
             .then(data => {
                 p.textContent = "usuario cadastrado com sucesso"
                 console.log(data);
             })
             .catch(error => {
-                p.textContent = "erro ao cadatrar";
+                p.textContent = error.message;
                 console.log(error);
-            });
+            }); 
 
         } else {
             p.textContent = "Falta: " + camposVazios.join(", ");
