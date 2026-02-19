@@ -6,12 +6,12 @@ const roteador = express.Router()
 async function login(req,res){
     const { nome, senha } = req.body;
 
-    const [rows] = await db.query(
+    const [encontrado] = await db.query(
         "SELECT * FROM usuarios WHERE nome = ? AND senha = ?",
         [nome, senha]
     );
 
-    if (rows.length > 0) {
+    if (encontrado.length > 0) {
         res.status(200).json({ mensagem: "login valido" });
     } else {
         res.status(401).json({ mensagem: "Usuario ou senha invalido" });
