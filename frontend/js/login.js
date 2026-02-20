@@ -17,8 +17,8 @@ function renderLogin() {
     formLogin.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const nome = document.getElementById("Nome").value;
-        const senha = document.getElementById("Senha").value;
+        const nome = document.getElementById("Nome").value.trim();
+        const senha = document.getElementById("Senha").value.trim();
         const p = document.getElementById("p");
 
         if (nome === "" && senha === "") {
@@ -34,18 +34,18 @@ function renderLogin() {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify ({
+                body: JSON.stringify({
                     nome: nome,
                     senha: senha
                 })
             })
-            .then(res => res.json())
-            .then(data => {
-                p.textContent = data.mensagem;
-            })
-            .catch(error => {
-                p.textContent = "erro no serviodr";
-            })
+                .then(res => res.json())
+                .then(data => {
+                    p.textContent = data.mensagem;
+                })
+                .catch(error => {
+                    p.textContent = "erro no serviodr";
+                })
         }
     });
 
@@ -73,9 +73,9 @@ function renderCadastro() {
     formCadastro.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const nome = document.getElementById("Nome").value;
-        const senha = document.getElementById("Senha").value;
-        const email = document.getElementById("Email").value;
+        const nome = document.getElementById("Nome").value.trim();
+        const senha = document.getElementById("Senha").value.trim();
+        const email = document.getElementById("Email").value.trim();
         const p = document.getElementById("p");
 
         const camposVazios = [];
@@ -83,7 +83,7 @@ function renderCadastro() {
         if (nome === "") camposVazios.push("nome");
         if (senha === "") camposVazios.push("senha");
         if (email === "") camposVazios.push("email");
-        
+
         if (camposVazios.length === 0) {
             fetch("http://localhost:3000/cadastro", {
                 method: "POST",
@@ -96,20 +96,19 @@ function renderCadastro() {
                     email: email
                 })
             })
-            
-            .then(response => {
-                if(!response.ok) {
-                    throw new Error("Conflito de informações");
-                }
-            return response.json()})
-            .then(data => {
-                p.textContent = "usuario cadastrado com sucesso"
-                console.log(data);
-            })
-            .catch(error => {
-                p.textContent = error.message;
-                console.log(error);
-            }); 
+
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error("Conflito de informações");
+                    }
+                    return res.json()
+                })
+                .then(data => {
+                    p.textContent = "usuario cadastrado com sucesso"
+                })
+                .catch(error => {
+                    p.textContent = error.message;
+                });
 
         } else {
             p.textContent = "Falta: " + camposVazios.join(", ");
