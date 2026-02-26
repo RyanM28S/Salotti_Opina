@@ -5,8 +5,8 @@ function renderLogin() {
         <form id="formLogin">
             <input type="text" id="Nome" placeholder="Nome">
             <input type="text" id="Senha" placeholder="Senha">
-            <button type="submit">Enviar</button>
-            <p id="p"></p>
+            <button type="submit" class ="bLogin">Enviar</button>
+            <p id="p" class="white"></p>
         </form>
         <button id="cadastro">Não tem cadastro?</button>
     `;
@@ -62,9 +62,9 @@ function renderCadastro() {
             <input type="text" id="Senha" placeholder="Senha">
             <input type="text" id="Email" placeholder="Email">
             <button type="submit">Enviar</button>
-            <p id="p"></p>
+            <p id="p"class="white"></p>
         </form>
-        <button id="login">Já tem cadastro?</button>
+        <button id="login" class ="bcadastro">Já tem cadastro?</button>
     `;
 
     const formCadastro = document.getElementById("formCadastro");

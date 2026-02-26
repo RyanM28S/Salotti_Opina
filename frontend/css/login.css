@@ -68,6 +68,8 @@ h2 {
     font-weight: bold;
 
     transition: 0.3s;
+    margin-left: 36%;
+    margin-top: 15px;
 }
 
 #formCadastro button:hover {
@@ -81,4 +83,52 @@ h2 {
     border: none;
     color: #38bdf8;
     cursor: pointer;
+}
+
+.bcadastro{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(90deg, #7c3aed, #06b6d4);
+    color: white;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.bLogin{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(90deg, #7c3aed, #06b6d4);
+    color: white;
+    font-weight: bold;
+
+    transition: 0.3s;
+    margin-left: 36%;
+    margin-top: 15px;
+}
+
+
+#formLogin input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+
+    background: #020617;
+    color: #e2e8f0;
+
+    border: 1px solid #1e293b;
+}
+
+#formLogin input::placeholder {
+    color: #64748b;
+}
+
+.white{
+    color: white
 }
