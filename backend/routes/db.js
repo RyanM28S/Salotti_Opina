@@ -4,11 +4,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const db = mysql.createPool({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    port: process.env.BD_PORT
+    host: '192.168.56.1',
+    user: 'backend',
+    password: 'rrnea.@2009',
+    database: 'app_db',
+    port: '3306'
 })
 
 export default db   
