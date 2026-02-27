@@ -44,7 +44,7 @@ function renderLogin() {
                     p.textContent = data.mensagem;
                 })
                 .catch(error => {
-                    p.textContent = "erro no serviodr";
+                    p.textContent = "Erro no servidor";
                 })
         }
     });
