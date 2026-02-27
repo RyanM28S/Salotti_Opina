@@ -7,6 +7,7 @@ function renderLogin() {
             <input type="text" id="Senha" placeholder="Senha">
             <button type="submit" class ="bLogin">Enviar</button>
             <p id="p" class="white"></p>
+            <a href="teste mensagem.html">mensagem</a>
         </form>
         <button id="cadastro">Não tem cadastro?</button>
     `;
@@ -41,7 +42,14 @@ function renderLogin() {
             })
                 .then(res => res.json())
                 .then(data => {
-                    p.textContent = data.mensagem;
+
+                    if(data.token) {
+                        localStorage.setItem("token", data.token);
+                        p.textContent = "login realizado";
+                    } else {
+                        p.textContent = data.mensagem;
+                    }
+                    
                 })
                 .catch(error => {
                     p.textContent = "erro no serviodr";
@@ -63,6 +71,7 @@ function renderCadastro() {
             <input type="text" id="Email" placeholder="Email">
             <button type="submit">Enviar</button>
             <p id="p"class="white"></p>
+            <a href="teste mensagem.html">mensagem</a>
         </form>
         <button id="login" class ="bcadastro">Já tem cadastro?</button>
     `;
@@ -107,7 +116,7 @@ function renderCadastro() {
                     p.textContent = "usuario cadastrado com sucesso"
                 })
                 .catch(error => {
-                    p.textContent = error.message;
+                    p.textContent = error.mensagem;
                 });
 
         } else {

@@ -1,18 +1,38 @@
 import express from 'express'
 import db from './db.js'
+import jwt from 'jsonwebtoken'
 
-const roteador = express.Router();
+const roteador = express.Router()
 
-async function Emensagem(req, res) {
-    const {mensagem} = req.body;
+function verificarToken(req, res, next) {
+    const authHeader = req.headers.authorization
 
-    const [Cmensagem] = await db.query(
-        "INSERT INTO mensagens(mensagem) VALUES(?)",
-        [mensagem]
-    )
-    res.status(201).json({mensagem : "Tudo certo"});
+    if (!authHeader) {
+        return res.status(401).json({ mensagem: "Token não enviado" })
+    }
+
+    const token = authHeader.split(" ")[1]
+
+    try {
+        const decoded = jwt.verify(token, "")
+        req.usuarioId = decoded.id
+        next()
+    } catch (err) {
+        return res.status(401).json({ mensagem: "Token inválido" })
+    }
 }
 
-roteador.post('/mensagem', Emensagem)
+async function Emensagem(req, res) {
+    const { mensagem } = req.body
 
-export default roteador
+    await db.query(
+        "INSERT INTO mensagens (mensagem, usuario_id) VALUES (?, ?)",
+        [mensagem, req.usuarioId]
+    )
+
+    res.status(201).json({ mensagem: "Tudo certo" })
+}
+
+roteador.post('/mensagem', verificarToken, Emensagem)
+
+export default roteador 

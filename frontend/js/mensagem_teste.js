@@ -1,3 +1,5 @@
+import { get } from "node:http";
+
 const form = document.getElementById("formMen");
 
 form.addEventListener('submit', function (event) {
@@ -9,10 +11,13 @@ form.addEventListener('submit', function (event) {
     if (mensagem === "") {
         p.textContent = "Não tem nada"
     } else {
+
+        const token = localStorage.getItem("token");
         fetch("http://localhost:3000/mensagem", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Authorization": "Bearer" + token
             },
             body: JSON.stringify({
                 mensagem: mensagem
