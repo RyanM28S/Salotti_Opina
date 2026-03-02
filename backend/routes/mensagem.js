@@ -29,7 +29,7 @@ async function Emensagem(req, res) {
     const { mensagem } = req.body
 
     await db.query(
-        "INSERT INTO mensagens (mensagem, usuario_id) VALUES (?, ?)",
+        "INSERT INTO mensagens (mensagem, id_usuarios) VALUES (?, ?)",
         [mensagem, usuarioId]
     )
 

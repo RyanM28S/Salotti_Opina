@@ -3,7 +3,6 @@ import cors from 'cors'
 import rotaCadastro from "./routes/cadastro.js"
 import rotaLogin from "./routes/login2.js"
 import rotaMensagem from "./routes/mensagem.js"
-import jwt from "jsonwebtoken"
 
 const app = express();
 
