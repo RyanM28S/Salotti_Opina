@@ -1,8 +1,11 @@
 import express from 'express'
 import db from './db.js'
 import jwt from 'jsonwebtoken'
+import segredo from "./segredo.js"
 
 const roteador = express.Router()
+
+let usuarioId
 
 function verificarToken(req, res, next) {
     const authHeader = req.headers.authorization
@@ -14,8 +17,8 @@ function verificarToken(req, res, next) {
     const token = authHeader.split(" ")[1]
 
     try {
-        const decoded = jwt.verify(token, "")
-        req.usuarioId = decoded.id
+        const decoded = jwt.verify(token, "segredo")
+        usuarioId = decoded.id
         next()
     } catch (err) {
         return res.status(401).json({ mensagem: "Token inválido" })
@@ -27,7 +30,7 @@ async function Emensagem(req, res) {
 
     await db.query(
         "INSERT INTO mensagens (mensagem, usuario_id) VALUES (?, ?)",
-        [mensagem, req.usuarioId]
+        [mensagem, usuarioId]
     )
 
     res.status(201).json({ mensagem: "Tudo certo" })

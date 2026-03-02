@@ -1,5 +1,3 @@
-import { get } from "node:http";
-
 const form = document.getElementById("formMen");
 
 form.addEventListener('submit', function (event) {
@@ -17,7 +15,7 @@ form.addEventListener('submit', function (event) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "Bearer" + token
+                "Authorization": "Bearer " + token
             },
             body: JSON.stringify({
                 mensagem: mensagem
