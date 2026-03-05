@@ -1,7 +1,6 @@
 import express from 'express'
 import db from './db.js'
 import jwt from 'jsonwebtoken'
-import segredo from "./segredo.js"
 
 const roteador = express.Router()
 
@@ -29,7 +28,7 @@ async function Emensagem(req, res) {
     const { mensagem } = req.body
 
     await db.query(
-        "INSERT INTO mensagens (mensagem, usuario_id) VALUES (?, ?)",
+        "INSERT INTO mensagens (mensagem, id_usuarios) VALUES (?, ?)",
         [mensagem, usuarioId]
     )
 

@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const db = mysql.createPool({
-    host: '10.171.21.40',
+    host: '192.168.56.1',
     user: 'backend',
     password: 'rrnea.@2009',
     database: 'app_db',

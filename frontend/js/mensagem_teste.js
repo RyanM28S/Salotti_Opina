@@ -3,7 +3,7 @@ const form = document.getElementById("formMen");
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const mensagem = document.getElementById("mensagem").value;
+    const mensagem = document.getElementById("mensagem_usu").value;
     const p = document.getElementById("resposta")
 
     if (mensagem === "") {
