@@ -31,7 +31,7 @@ header {
 }
 
 .inputh {
-  margin: 0.1rem 0 0 9.2rem;
+  margin: 0.1rem 0 0 36rem;
   padding: 0.6rem 9.5rem 0.6rem 1.8rem;
   border: 1px solid rgba(84, 77, 93, 0.36);
   border-radius: 0.6rem;
@@ -45,7 +45,7 @@ header {
   color: #FFFFFF;
   border: none;
   font-size: 0.8rem;
-  margin: 0 0 0 8rem;
+  margin: 0 0 0 26rem;
   
 }
 
@@ -142,7 +142,7 @@ header {
   padding: 3rem 0;
   height: 10rem;
   width: 26rem;
-  margin: 2rem 1rem;
+  margin: 2rem 2rem;
   border-radius: 1.5rem;
 }
 
