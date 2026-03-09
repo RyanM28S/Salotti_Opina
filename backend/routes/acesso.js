@@ -37,14 +37,14 @@ async function cadastrar(req, res) {
         const { email, senha, nome } = req.body
         const [resultado] = await db.query("INSERT INTO usuarios(nome,email,senha) VALUES(?,?,?)", [nome, email, senha])
         if (resultado.affectedRows > 0) {
-            return res.status(201).json({ message: "Cadastrado com sucessso" })
+            return res.status(201).json({ mensagem: "Cadastrado com sucessso" })
         } else {
-            return res.status(401).json({ message: "Erro ao cadastrar" })
+            return res.status(401).json({ mensagem: "Erro ao cadastrar" })
         }
     } catch (erro) {
         console.error(erro)
         if (erro.code === "ER_DUP_ENTRY") {
-            res.status(400).json({ message: "Email ou nome de usuario indisponivel" })
+            res.status(400).json({ mensagem: "Email ou nome de usuario indisponivel" })
         }
     }
 }
