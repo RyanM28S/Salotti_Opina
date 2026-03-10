@@ -47,7 +47,7 @@
   
   .hbutton {
     border-radius: 0.6rem;
-    padding: 0.6rem 1rem;
+    padding: 1rem 1rem;
     background: rgba(100, 23, 223, 0.99);
     color: #FFFFFF;
     border: none;
@@ -62,12 +62,12 @@
     padding: 0 0 0 2.4rem;
     font-size: 1rem;
   }
-  
+
+  /*header fim*/
 
 body {
     background: linear-gradient(to right, rgb(83, 35, 172), rgb(0, 0, 0));
     color: #ffffff;
-
 }
 
 .container {
