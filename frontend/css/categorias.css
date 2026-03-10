@@ -32,14 +32,14 @@ body {
     font-size: 1.1rem;
 }
 
-/* Grid System */
+
 .grid-categorias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
 }
 
-/* Estilização do Card (Botão) */
+
 .card {
     background: #ffffff;
     border: none;
@@ -65,7 +65,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Ícones */
+
 .icon-box {
     width: 55px;
     height: 55px;
@@ -77,14 +77,13 @@ body {
     color: white;
 }
 
-.orange { background-color: #ff6b00; }
-.blue   { background-color: #2563eb; }
-.purple { background-color: #a855f7; }
-.green  { background-color: #10b981; }
-.yellow { background-color: #eab308; }
-.pink   { background-color: #db2777; }
+.orange { background-color: oklch(.705 .213 47.604); }
+.blue   { background-color: oklch(.623 .214 259.815); }
+.purple { background-color: oklch(.627 .265 303.9); }
+.green  { background-color: oklch(.723 .219 149.579); }
+.yellow { background-color: oklch(.795 .184 86.047); }
+.pink   { background-color: oklch(.656 .241 354.308); }
 
-/* Nota do Rating */
 .rating {
     background-color: #fef9c3;
     color: #854d0e;
@@ -94,7 +93,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Textos do Card */
 .card h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
@@ -118,4 +116,11 @@ body {
 .reviews {
     font-size: 0.85rem;
     color: #94a3b8;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #64748b;
+    font-size: 0.9rem;
 }
