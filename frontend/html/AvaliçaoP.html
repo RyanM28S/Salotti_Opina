@@ -1,128 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<title>Avaliação de Professores</title>
-<link rel="stylesheet" href=".//AvaliaçaoP.css">
+    <meta charset="UTF-8">
+    <title>Avaliação de Professores</title>
+    <link rel="stylesheet" href="../css/AvaliaçaoP.css">
 </head>
 
 <body>
 
-<div class="container">
+    <header class="tokyo">
+        <div class="header">
+            <div class="himg">
+                <img src="" alt="">
+            </div>
+            <div class="htitulo">
+                <h2 class="htitulo">Salotti Opina</h2>
+            </div>
 
-<h2>Avaliação de Professores</h2>
+            <div class="dinputh">
+                <input type="text" name="pesquisar" placeholder="Buscar professores..." class="inputh">
 
-<div class="filtros">
-<button class="ativo">Todos</button>
-<button>Exatas</button>
-<button>Humanas</button>
-<button>Linguagens</button>
-<button>Saúde</button>
-</div>
+            </div>
+            <div>
+                <button type="submit" class="hbutton">
+                    <h3>Nova avaliação</h3>
+                </button>
+            </div>
+        </div>
+        <nav class="header1">
+            <a href="interface.html" class="nav1">Início</a>
+            <a href="AvaliçaoP.html" class="nav1">Professores</a>
+            <a href="categorias.html" class="nav1">Categorias</a>
+        </nav>
+    </header>
 
-<div class="professores">
+    <div class="container">
 
-<div class="card">
-<h3>Prof. Elen</h3>
-<p class="materia">Português</p>
+        <h2>Avaliação de Professores</h2>
 
-<span class="nota">⭐ 5.0</span>
+        <div class="filtros">
+            <button class="ativo">Todos</button>
+            <button>Exatas</button>
+            <button>Humanas</button>
+            <button>Linguagens</button>
+            <button>Saúde</button>
+        </div>
 
-<p class="avaliacoes">145 avaliações</p>
+        <div class="professores">
 
-<button class="avaliar">Avaliar</button>
-</div>
+            <div class="card">
+                <h3>Prof. Elen</h3>
+                <p class="materia">Português</p>
 
-<div class="card">
-<h3>Prof. Karen</h3>
-<p class="materia">Ed.fisíca</p>
+                <span class="nota">⭐ 5.0</span>
 
-<span class="nota">⭐ 5.0</span>
+                <p class="avaliacoes">145 avaliações</p>
 
-<p class="avaliacoes">205 avaliações</p>
+                <button class="avaliar">Avaliar</button>
+            </div>
 
-<button class="avaliar">Avaliar</button>
+            <div class="card">
+                <h3>Prof. Karen</h3>
+                <p class="materia">Ed.fisíca</p>
 
-</div>
+                <span class="nota">⭐ 5.0</span>
 
-<div class="card">
-<h3>Prof. Romário</h3>
-<p class="materia">Matemática</p>
+                <p class="avaliacoes">205 avaliações</p>
 
-<span class="nota">⭐ 5.0</span>
+                <button class="avaliar">Avaliar</button>
 
-<p class="avaliacoes">155 avaliações</p>
+            </div>
 
-<button class="avaliar">Avaliar</button>
+            <div class="card">
+                <h3>Prof. Romário</h3>
+                <p class="materia">Matemática</p>
 
-</div>
+                <span class="nota">⭐ 5.0</span>
 
-<div class="card">
-<h3>Prof. Carlos</h3>
-<p class="materia">História</p>
+                <p class="avaliacoes">155 avaliações</p>
 
-<span class="nota">⭐ 5.0</span>
+                <button class="avaliar">Avaliar</button>
 
-<p class="avaliacoes">200 avaliações</p>
+            </div>
 
-<button class="avaliar">Avaliar</button>
+            <div class="card">
+                <h3>Prof. Carlos</h3>
+                <p class="materia">História</p>
 
-</div>
+                <span class="nota">⭐ 5.0</span>
 
-<div class="card">
-<h3>Prof. Luan Quaresma</h3>
-<p class="materia">front-end</p>
+                <p class="avaliacoes">200 avaliações</p>
 
-<span class="nota">⭐ 5.0</span>
+                <button class="avaliar">Avaliar</button>
 
-<p class="avaliacoes">145 avaliações</p>
+            </div>
 
-<button class="avaliar">Avaliar</button>
+            <div class="card">
+                <h3>Prof. Luan Quaresma</h3>
+                <p class="materia">front-end</p>
 
-</div>
+                <span class="nota">⭐ 5.0</span>
 
-<div class="card">
-<h3>Profa. João lucca</h3>
-<p class="materia">Banco de dados</p>
+                <p class="avaliacoes">145 avaliações</p>
 
-<span class="nota">⭐ 5.0</span>
+                <button class="avaliar">Avaliar</button>
 
-<p class="avaliacoes">154 avaliações</p>
+            </div>
 
-<button class="avaliar">Avaliar</button>
-</div>
+            <div class="card">
+                <h3>Profa. João lucca</h3>
+                <p class="materia">Banco de dados</p>
 
-</div>
+                <span class="nota">⭐ 5.0</span>
 
-<canvas id="grafico"></canvas>
+                <p class="avaliacoes">154 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+            </div>
+
+        </div>
+
+        <canvas id="grafico"></canvas>
 
 
-<div id="modal" class="modal">
+        <div id="modal" class="modal">
 
-<div class="modal-conteudo">
+            <div class="modal-conteudo">
 
-<h3>Avaliar Professor</h3>
+                <h3>Avaliar Professor</h3>
 
-<div class="estrelas">
-<span data-star="1">⭐</span>
-<span data-star="2">⭐</span>
-<span data-star="3">⭐</span>
-<span data-star="4">⭐</span>
-<span data-star="5">⭐</span>
-</div>
+                <div class="estrelas">
+                    <span data-star="1">⭐</span>
+                    <span data-star="2">⭐</span>
+                    <span data-star="3">⭐</span>
+                    <span data-star="4">⭐</span>
+                    <span data-star="5">⭐</span>
+                </div>
 
-<textarea placeholder="Deixe um comentário..."></textarea>
+                <textarea placeholder="Deixe um comentário..."></textarea>
 
-<button id="enviar">Enviar Avaliação</button>
+                <button id="enviar">Enviar Avaliação</button>
 
-<button id="fechar">Fechar</button>
+                <button id="fechar">Fechar</button>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-<script src="AvaliaçaoP.js"></script>
+    <script src="../js/AvaliaçaoP.js"></script>
 </body>
+
 </html>

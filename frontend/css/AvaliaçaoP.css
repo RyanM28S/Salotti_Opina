@@ -11,6 +11,55 @@ margin:auto;
 padding:40px;
 }
 
+.headertopo {
+    height: 15rem;
+}
+
+.header {
+    display: flex;
+    background: rgba(15, 15, 35, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: row;
+    align-items: center;
+    padding: 0.4rem 2rem;
+}
+
+.header1 {
+    display: flex;
+    background: rgba(15, 15, 35, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: row;
+    align-items: center;
+    padding: 0.4rem 0;
+}
+
+.htitulo {
+    color: white;
+}
+.hbutton {
+    border-radius: 0.6rem;
+    padding: 0.1rem 1rem;
+    background: rgba(100, 23, 223, 0.99);
+    color: #FFFFFF;
+    border: none;
+    font-size: 0.8rem;
+    margin: 0 0 0 26rem;
+
+}
+.nav1 {
+    color: rgba(216, 210, 225, 0.55);
+    text-decoration: none;
+    padding: 0 0 0 2.4rem;
+    font-size: 1rem;
+}
+
+.inputh {
+    margin: 0.1rem 0 0 36rem;
+    padding: 0.6rem 9.5rem 0.6rem 1.8rem;
+    border: 1px solid rgba(84, 77, 93, 0.36);
+    border-radius: 0.6rem;
+    background-color: rgba(84, 77, 93, 0.36);
+}
 h2{
 text-align:center;
 margin-bottom:30px;
