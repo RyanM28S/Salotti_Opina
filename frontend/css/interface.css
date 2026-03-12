@@ -71,8 +71,8 @@ body {
 .bvozalunos {
   border-radius: 1rem;
   color: rgba(102, 54, 190, 1.05);
-  padding: 0.5rem 1.2rem;
-  margin: 0.5rem;
+  padding: 0.5rem 0.8rem 0.5rem 1.2rem;
+  margin: 2rem 1rem;
   background: rgba(179, 136, 255, 0.77);
   font-size: 1rem;
   border: none;
@@ -118,16 +118,18 @@ body {
   background: linear-gradient(135deg, #7c4dff 0%, #6200ea 100%);
   font-size: 0.9rem;
   border: none;
+  cursor: pointer;
 }
 
 .bcategorias {
   border-radius: 0.8rem;
   padding: 1rem 1.8rem;
   color: white;
-  background-color: rgba(88, 78, 113, 0.87);
-  border: 1px solid rgba(84, 77, 93, 0.36);
+  background-color: rgba(88, 78, 113, 0.14);
+  border: 1px solid rgba(84, 77, 93, 0.72);
   margin: 0 1rem;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .dcentral {
@@ -136,15 +138,109 @@ body {
 }
 
 .dprofessoresavaliados {
-  background-color: rgba(88, 78, 113, 0.87);
+  background-color: rgba(88, 78, 113, 0.14);
+  border: 1px solid rgba(84, 77, 93, 0.72);
   text-align: center;
   flex-direction: column;
   padding: 3rem 0;
-  height: 10rem;
   width: 26rem;
-  margin: 2rem 2rem;
+  margin: 2rem 0.7rem;
   border-radius: 1.5rem;
 }
+
+.vertodos {
+  display: flex;
+  padding: 1rem 2rem 0.5rem 2rem;
+}
+
+.vertodos a {
+  text-decoration: none;
+  margin-left: auto;
+  font-size: 1.6rem;
+  justify-content: center;
+}
+
+
+.dprofessorestodos {
+  margin: 2rem 2rem;
+}
+
+.dprofessores {
+  display: flex;
+  background-color: rgba(88, 78, 113, 0.14);
+  border: 1px solid rgba(95, 69, 159, 0.71);
+  width: 100%;
+  height: 8rem;
+  padding: 1rem 1rem 1rem 2rem;
+  line-height: 2rem;
+  border-radius: 0.7rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.materia {
+  color: rgba(160, 156, 163, 1);
+}
+
+.avaliacoes {
+  color: #535353;
+}
+
+.avaliacao {
+  display: flex;
+  margin: auto 0 auto auto;
+ align-items: center;
+ background-color: rgba(152, 160, 47, 0.37);
+ width: 6rem;
+ height: 3rem;
+ border-radius: 1rem;
+ padding: 0 1.3rem;
+ color: #E4CB2D;
+ border: 2px solid #E4CB2D5E;
+}
+
+.comofunciona {
+  text-align: center;
+  padding: 5rem 0 2rem 0;
+}
+
+.dpassos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+.passos {
+  padding: 2.5rem 1.5rem;
+  line-height: 1.3rem;
+  background-color: rgba(88, 78, 113, 0.14);
+  border: 1px solid rgba(84, 77, 93, 0.72);
+  width: 17rem;
+  height: 15rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  
+}
+
+.passos h2 {
+  margin-bottom: 1rem;
+  
+}
+
+.passos p{
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
+}
+
+.icone {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(95, 69, 159, 0.71);
+  border-radius: 1rem;
+  margin: 0 auto 1.5rem auto;
+}
+
 
 /*fim main*/
 
@@ -152,6 +248,7 @@ body {
 
 hr {
   border: 0.1px solid rgb(51, 51, 51);
+  margin: 3rem 0;
 }
 
 footer {
