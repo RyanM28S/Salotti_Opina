@@ -68,7 +68,7 @@ body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, rgb(83, 35, 172), rgb(0, 0, 0));
+    background:  #141033;
     color: var(--text-dark);
     margin: 0;
 }
