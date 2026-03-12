@@ -420,4 +420,5 @@ at.addEventListener('click', () => {
     </div>
 
     `
+    cssP.href = "../css/atendimento.css"
 })
