@@ -155,11 +155,17 @@ body {
 }
 
 .iconeavaliar {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   background-color: rgba(95, 69, 159, 0.342);
   border-radius: 1rem;
   margin: 0 auto 0.5rem auto;
+  padding: 0;
+
+  img {
+    height: auto;
+    width: 3rem;
+  }
 }
 
 .vertodos {
