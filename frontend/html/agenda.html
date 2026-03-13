@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salotti Controll</title>
+    <link rel="stylesheet" href="../css/head.css " />
+    <link rel="stylesheet" href="../css/agenda.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/icons8-raise-a-hand-to-answer-96.png"
+    />
+  </head>
+  <body class="index">
+    <header>
+      <div class="header">
+        <div class="himg">
+          <img src="" alt="" />
+        </div>
+        <div class="htitulo">
+          <h2 class="htitulo">Salotti Opina</h2>
+        </div>
+    
+        <div class="dinputh">
+          <input
+            type="text"
+            name="pesquisar"
+            placeholder="Buscar professores..."
+            class="inputh"
+          />
+        </div>
+        <div>
+          <button type="submit" class="hbutton">
+            <h3>+ Nova avaliação</h3>
+          </button>
+        </div>
+      </div>
+      <nav class="nav1">
+        <a href="interface.html" class="inicio">Início</a>
+        <a href="AvaliçaoP.html" class="professores1">Professores</a>
+        <a href="categorias.html" class="categorias">Categorias</a>
+        <a href="agenda.html" class="agenda">Agenda Para Controle de Aluno</a>
+      </nav>
+    </header>
+    <main>
+      <div class="cards" id="cadasal">
+        <div class="card">
+          <div class="icon">
+            <h2>👤</h2>
+          </div>
+          <div>
+            <h1 class="t1">?</h1>
+            <p>Alunos</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <h2>📖</h2>
+          </div>
+          <div>
+            <h1 class="t1">?</h1>
+            <p>Materias</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <h2>👥</h2>
+          </div>
+          <div>
+            <h1 class="t1">?</h1>
+            <p>Turmas</p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <button onclick="aparece()">
+              <span>+</span>
+            </button>
+          </div>
+          <div>
+            <h1 class="t2">Novo Aluno</h1>
+            <p>Clique aqui para Cadastra</p>
+          </div>
+        </div>
+      </div>
+      <div class="materia">
+        <div class="cafe">
+          <img src="../img/agenda.png" alt="icon" />
+          <p>Materías</p>
+        </div>
+        <div class="leite">
+          <input type="text" placeholder="Nova Materia" id="inputmateria" />
+          <button onclick="adicionarmateria()">+</button>
+        </div>
+      </div>
+      <div class="cadas desaparece" id="cadastroal"></div>
+    </main>
+    <script src="../js/agenda.js"></script>
+  </body>
+</html>
