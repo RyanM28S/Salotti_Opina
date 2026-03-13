@@ -6,11 +6,6 @@
     <title>Salotti Controll</title>
     <link rel="stylesheet" href="../css/head.css " />
     <link rel="stylesheet" href="../css/agenda.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="img/icons8-raise-a-hand-to-answer-96.png"
-    />
   </head>
   <body class="index">
     <header>
@@ -43,6 +38,10 @@
         <a href="agenda.html" class="agenda">Agenda Para Controle de Aluno</a>
       </nav>
     </header>
+
+
+
+
     <main>
       <div class="cards" id="cadasal">
         <div class="card">
@@ -74,7 +73,7 @@
         </div>
         <div class="card">
           <div>
-            <button onclick="aparece()">
+            <button id="aparece">
               <span>+</span>
             </button>
           </div>
@@ -94,7 +93,8 @@
           <button onclick="adicionarmateria()">+</button>
         </div>
       </div>
-      <div class="cadas desaparece" id="cadastroal"></div>
+      <div class="cadas desaparece" id="cadastroal">
+      </div>
     </main>
     <script src="../js/agenda.js"></script>
   </body>
