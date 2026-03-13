@@ -48,7 +48,7 @@ body {
 /*fim header */
 
 body {
-    background: linear-gradient(to right, rgb(83, 35, 172), rgb(0, 0, 0));
+    background: linear-gradient(135deg, #0b0220, #12003a);
     color: #ffffff;
 }
 
@@ -83,7 +83,7 @@ body {
 
 
 .card {
-    background: #ffffff;
+    background:#141033;
     border: none;
     border-radius: 15px;
     padding: 25px;
@@ -155,11 +155,11 @@ body {
 .card h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #1e293b;
+    color: white;
 }
 
 .card p {
-    color: #64748b;
+    color: white;
     font-size: 0.95rem;
     line-height: 1.4;
     margin-bottom: 20px;
@@ -174,7 +174,7 @@ body {
 
 .reviews {
     font-size: 0.85rem;
-    color: #94a3b8;
+    color: white;
 }
 
 .footer {
