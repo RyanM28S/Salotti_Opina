@@ -157,15 +157,19 @@ body {
 .iconeavaliar {
   width: 4rem;
   height: 4rem;
-  background-color: rgba(95, 69, 159, 0.342);
+  background-color: rgba(87, 45, 187, 0.192);
   border-radius: 1rem;
   margin: 0 auto 0.5rem auto;
-  padding: 0;
+  padding: 0.5rem 0;
 
   img {
     height: auto;
     width: 3rem;
   }
+}
+
+.balaodefala img {
+  width: 2rem;
 }
 
 .vertodos {
