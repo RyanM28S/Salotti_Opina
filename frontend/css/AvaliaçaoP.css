@@ -5,11 +5,18 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-font-family: Arial;
-background: linear-gradient(135deg,#0b0220,#12003a);
-color: white;
-margin:0;
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #0b0220, #12003a);
+  color: white;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  height: 40vw;
+  padding: 40px;
 }
 
 .container {
@@ -84,6 +91,7 @@ margin:0;
   padding: 0 0 1rem 2rem;
   font-size: 1rem;
 }
+
 nav {
   background: rgba(15, 15, 35, 0.95);
 }
@@ -117,6 +125,12 @@ nav {
 }
 
 /* CARDS */
+
+.professores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
 
 .professores {
   display: grid;
