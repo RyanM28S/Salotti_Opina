@@ -8,6 +8,7 @@ margin:0;
 .container{
 max-width:1000px;
 margin:auto;
+height: 40vw;
 padding:40px;
 }
 
@@ -93,7 +94,7 @@ background:#6c4cff;
 .professores{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:20px;
+gap:15px;
 }
 
 .card{
