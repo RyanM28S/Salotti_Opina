@@ -1,0 +1,57 @@
+.headertopo {
+    height: 13rem;
+}
+
+.headerp {
+    background-color: rgba(15, 15, 35, 0.95);
+
+
+}
+ .header {
+    display: flex;
+    background: rgba(15, 15, 35, 0.95);
+
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.htitulo {
+    color: white;
+}
+
+.dinputh {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.inputh {
+    justify-content: center;
+    padding: 0.6rem 9.5rem 0.6rem 1.8rem;
+    border: 1px solid rgba(84, 77, 93, 0.36);
+    border-radius: 0.6rem;
+    background-color: rgba(84, 77, 93, 0.36);
+}
+
+.hbutton {
+    border-radius: 0.6rem;
+    padding: 0.6rem 1rem;
+    background: rgba(100, 23, 223, 0.99);
+    color: #FFFFFF;
+    border: none;
+    font-size: 0.8rem;
+    margin-left: auto;  
+
+}
+
+.nav1 {
+    display: flex;
+    color: rgba(216, 210, 225, 0.55);
+    text-decoration: none;
+    padding: 0 0 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+}

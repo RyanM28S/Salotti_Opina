@@ -12,48 +12,36 @@ body {
 }
 
 /*header*/
-
-.headertopo {
-  height: 13rem;
-}
-
-.header {
+.inicio {
   display: flex;
-  background: rgba(15, 15, 35, 0.95);
-  backdrop-filter: blur(10px);
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
-.htitulo {
-  color: white;
-}
-
-.inputh {
-  margin: 0.1rem 0 0 36rem;
-  padding: 0.6rem 9.5rem 0.6rem 1.8rem;
-  border: 1px solid rgba(84, 77, 93, 0.36);
-  border-radius: 0.6rem;
-  background-color: rgba(84, 77, 93, 0.36);
-}
-
-.hbutton {
-  border-radius: 0.6rem;
-  padding: 0.6rem 1rem;
-  background: rgba(100, 23, 223, 0.99);
-  color: #FFFFFF;
-  border: none;
+  padding: 0 0 0.3rem 2rem;
+  color: rgb(123, 71, 255);
+  text-underline-offset: 0.7rem;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-color: rgba(123, 71, 255, 1);
   font-size: 0.8rem;
-  margin: 0 0 0 26rem;
-  
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
 }
 
-.nav1 {
+.categorias {
+  display: flex;
   color: rgba(216, 210, 225, 0.55);
   text-decoration: none;
-  padding: 0 0 0 2.4rem;
-  font-size: 1rem;
+  padding: 0 0 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
+}
+
+.professores1 {
+  display: flex;
+  color: rgba(216, 210, 225, 0.55);
+  text-decoration: none;
+  padding: 0 0 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
 }
 
 /*fim header */
@@ -142,10 +130,26 @@ body {
   border: 1px solid rgba(84, 77, 93, 0.72);
   text-align: center;
   flex-direction: column;
-  padding: 3rem 0;
-  width: 26rem;
-  margin: 2rem 0.7rem;
+  padding: 2rem 0;
+  width: 20%;
+  height: 10%;
+  margin: 2rem auto;
   border-radius: 1.5rem;
+  transition: all 1s ease-out;
+}
+
+.dprofessoresavaliados:hover {
+  border: 0.1rem solid rgba(95, 69, 159, 0.952);
+  width: 22%;
+  height: 12%;
+}
+
+.iconeavaliar {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(95, 69, 159, 0.342);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem auto;
 }
 
 .vertodos {
@@ -216,11 +220,17 @@ body {
   line-height: 1.3rem;
   background-color: rgba(88, 78, 113, 0.14);
   border: 1px solid rgba(84, 77, 93, 0.72);
-  width: 17rem;
+  width: 20%;
   height: 15rem;
   border-radius: 1.5rem;
   text-align: center;
-  
+  transition: all 1s ease-out;
+}
+
+.passos:hover {
+  border: 0.1rem solid rgba(95, 69, 159, 0.71);
+  width: 22%;
+  height: 16rem;
 }
 
 .passos h2 {
@@ -233,10 +243,10 @@ body {
   font-size: 0.9rem;
 }
 
-.icone {
+.iconecomo {
   width: 3rem;
-  height: 3rem;
-  background-color: rgba(95, 69, 159, 0.71);
+  height: 3rem  ;
+  background-color: rgba(95, 69, 159, 0.342);
   border-radius: 1rem;
   margin: 0 auto 1.5rem auto;
 }
@@ -253,6 +263,7 @@ hr {
 
 footer {
   text-align: center;
+  padding: 2rem 0;
 }
 
 /*fim footer*/
