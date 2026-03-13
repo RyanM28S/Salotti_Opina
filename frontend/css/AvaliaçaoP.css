@@ -65,6 +65,16 @@ body {
   background: rgba(15, 15, 35, 0.95);
 }
 
+.agenda {
+  display: flex;
+  color: rgba(216, 210, 225, 0.55);
+  text-decoration: none;
+  padding: 0 0 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
+}
+
 /*fim header */
 /* BOTÕES DE FILTRO */
 
@@ -72,13 +82,7 @@ body {
   color: white;
 }
 
-.inputh {
-  margin: 0.1rem 0 0 36rem;
-  padding: 0.6rem 9.5rem 0.6rem 1.8rem;
-  border: 1px solid rgba(84, 77, 93, 0.36);
-  border-radius: 0.6rem;
-  background-color: rgba(84, 77, 93, 0.36);
-}
+
 
 .hbutton {
   border-radius: 0.6rem;
