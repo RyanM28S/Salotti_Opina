@@ -45,6 +45,16 @@ body {
     background: rgba(15, 15, 35, 0.95);
 }
 
+.inputh {
+    display: flex;
+    justify-content: center;
+    margin-left: j;
+    padding: 0.6rem 9.5rem 0.6rem 1.8rem;
+    border: 1px solid rgba(84, 77, 93, 0.36);
+    border-radius: 0.6rem;
+    background-color: rgba(84, 77, 93, 0.36);
+}
+
 /*fim header */
 
 body {
@@ -179,7 +189,8 @@ body {
 
 .footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
     color: #ffffff;
     font-size: 0.9rem;
 }
