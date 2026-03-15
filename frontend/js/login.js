@@ -7,7 +7,6 @@ function renderLogin() {
             <input type="text" id="Senha" placeholder="Senha">
             <button type="submit" class ="bLogin">Enviar</button>
             <p id="p" class="white"></p>
-            <a href="teste mensagem.html">mensagem</a>
         </form>
         <button id="cadastro">Não tem cadastro?</button>
     `;
