@@ -11,7 +11,7 @@ async function contagem(req,res) {
         const quant = inter.length
         res.status(200).json({quantidade: `${quant}`})
     } catch(erro) {
-        res.status(404).json({mensagem: "Nenhum professor registrado"})        
+        console.log(erro)
     }
 }
 
