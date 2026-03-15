@@ -9,7 +9,7 @@ async function contagem(req,res) {
         const resultado = await db.query("SELECT * FROM usuarios WHERE cargo = ?",["professor"])
         const inter = await resultado[0]
         const quant = inter.length
-        res.status(200).json({quantidade: `${quant}`})
+        res.status(200).json({quantidade: quant})
     } catch(erro) {
         console.log(erro)
     }
