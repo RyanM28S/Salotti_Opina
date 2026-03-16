@@ -1,130 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salotti Controll</title>
-    <link rel="stylesheet" href="../css/head.css " />
-    <link rel="stylesheet" href="../css/agenda.css" />
-  </head>
-  <body class="index">
-    <header>
-      <div class="header">
-        <div class="himg">
-          <img src="" alt="" />
-        </div>
-        <div class="htitulo">
-          <h2 class="htitulo">Salotti Opina</h2>
-        </div>
-    
-        <div class="dinputh">
-          <input
-            type="text"
-            name="pesquisar"
-            placeholder="Buscar professores..."
-            class="inputh"
-          />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salotti Controll</title>
+  <link rel="stylesheet" href="../css/head.css " />
+  <link rel="stylesheet" href="../css/agenda.css" />
+</head>
+
+<body class="index">
+  <header>
+    <div class="header">
+      <div class="himg">
+        <img src="" alt="" />
+      </div>
+      <div class="htitulo">
+        <h2 class="htitulo">Salotti Opina</h2>
+      </div>
+
+      <div class="dinputh">
+        <input type="text" name="pesquisar" placeholder="Buscar professores..." class="inputh" />
+      </div>
+      <div>
+        <button type="submit" class="hbutton">
+          <h3>+ Nova avaliação</h3>
+        </button>
+      </div>
+    </div>
+    <nav class="nav1">
+      <a href="interface.html" class="inicio">Início</a>
+      <a href="AvaliçaoP.html" class="professores1">Professores</a>
+      <a href="categorias.html" class="categorias">Categorias</a>
+      <a href="agenda.html" class="agenda">Agenda Para Controle de Aluno</a>
+    </nav>
+  </header>
+
+
+
+
+  <main>
+    <div class="cards" id="cadasal">
+      <div class="card">
+        <div class="icon">
+          <img src="../img/aluno.png" alt="icone-aluno">
         </div>
         <div>
-          <button type="submit" class="hbutton">
-            <h3>+ Nova avaliação</h3>
+          <h1 class="t1">?</h1>
+          <p>Alunos</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="../img/materia1.png" alt="icone-materias">
+        </div>
+        <div>
+          <h1 class="t1">?</h1>
+          <p>Materias</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="../img/turma1.png" alt="icone-turma">
+        </div>
+        <div>
+          <h1 class="t1">?</h1>
+          <p>Turmas</p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <button id="aparece">
+            <span>+</span>
           </button>
         </div>
-      </div>
-      <nav class="nav1">
-        <a href="interface.html" class="inicio">Início</a>
-        <a href="AvaliçaoP.html" class="professores1">Professores</a>
-        <a href="categorias.html" class="categorias">Categorias</a>
-        <a href="agenda.html" class="agenda">Agenda Para Controle de Aluno</a>
-      </nav>
-    </header>
-
-
-
-
-    <main>
-      <div class="cards" id="cadasal">
-        <div class="card">
-          <div class="icon">
-            <img src="../img/aluno.png" alt="icone-aluno">
-          </div>
-          <div>
-            <h1 class="t1">?</h1>
-            <p>Alunos</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">
-            <img src="../img/materia1.png" alt="icone-materias">
-          </div>
-          <div>
-            <h1 class="t1">?</h1>
-            <p>Materias</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">
-            <img src="../img/turma1.png" alt="icone-turma">
-          </div>
-          <div>
-            <h1 class="t1">?</h1>
-            <p>Turmas</p>
-          </div>
-        </div>
-        <div class="card">
-          <div>
-            <button id="aparece">
-              <span>+</span>
-            </button>
-          </div>
-          <div>
-            <h1 class="t2">Novo Aluno</h1>
-            <p>Clique aqui para Cadastra</p>
-          </div>
+        <div>
+          <h1 class="t2">Novo Aluno</h1>
+          <p>Clique aqui para Cadastra</p>
         </div>
       </div>
-      <div class="materia">
-        <div class="cafe">
-          <img src="../img/agenda.png" alt="icon" />
-          <p>Materías</p>
-        </div>
-        <div class="leite">
-          <input type="text" placeholder="Nova Materia" id="inputmateria" />
-          <button onclick="adicionarmateria()">+</button>
-        </div>
+    </div>
+    <div class="materia">
+      <div class="cafe">
+        <img src="../img/agenda.png" alt="icon" />
+        <p>Materías</p>
       </div>
-      <div class="cadas desaparece" id="cadastroal">
+      <div class="leite">
+        <input type="text" placeholder="Nova Materia" id="inputmateria" />
+        <button onclick="adicionarmateria()">+</button>
       </div>
-      <div class="infor_alunos">
-        <div class="lado1">
+    </div>
+    <div class="cadas desaparece" id="cadastroal">
+    </div>
+    <div class="infor_alunos">
+      <div class="lado1">
         <div class="lado">
           <img src="../img/icone aluno.svg" alt="icone-aluno" class="imgal">
           <p class="p1">Alunos</p>
           <p class="p2">?</p>
-        </div >
+        </div>
         <div>
           <input class="inp7" type="text" placeholder="Buscar Aluno...">
         </div>
-        </div>
-        <div class="ladov2">
-          <div class="ladov1">
-            <div>
-              <h1 class="inicial">?</h1>
-            </div>
-            <div>
-              <p class="nome">vini</p>
-              <div class="ladov1">
-                <p class="sub">Ra:0000</p>
-              <p class="sub">*</p>
-            <p class="sub">Turma 3DM</p></div>
-            <div class="ladov3"><p class="forte">forte</p>
-            <p class="fraco">fraco</p></div>
-            </div>
-          </div>
-          <div class="butoes"><button><img src="../img/lapisv1.png" alt="icone-lapis"></button>
-          <button><img src="../img/lixov1.svg" alt="icone-lixo"></button></div>
       </div>
-    </main>
-    <script src="../js/agenda.js"></script>
-  </body>
+      <div class="ladov2">
+        <div id="alunos" class="ladov1">
+
+        </div>
+        <div class="butoes"><button><img src="../img/lapisv1.png" alt="icone-lapis"></button>
+          <button><img src="../img/lixov1.svg" alt="icone-lixo"></button>
+        </div>
+      </div>
+  </main>
+  <script src="../js/agenda.js"></script>
+</body>
+
 </html>
