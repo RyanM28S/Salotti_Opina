@@ -1,8 +1,11 @@
 const apa = document.getElementById("aparece");
 const cada = document.getElementById("cadastroal");
 const alunos = document.getElementById("alunos");
+const materia = document.getElementById("materia");
+const add = document.getElementById("add");
 
-apa.addEventListener('click', function() {
+
+apa.addEventListener('click', function () {
   cada.classList.remove("desaparece");
   cada.innerHTML = `
         <div class="al">
@@ -34,36 +37,36 @@ apa.addEventListener('click', function() {
         </div>
         <button id="cada" >Cadastrar Aluno</button>
   `
-  
+
   const cadaA = document.getElementById("cada");
   cadaA.addEventListener('click', () => {
 
     const nome = document.getElementById("nome").value.trim();
-    const primeiraLetra = nome[0]; 
+    const primeiraLetra = nome[0];
     const turma = document.getElementById("turma").value.trim();
     const ra = document.getElementById("ra").value.trim();
     const forte = document.getElementById("forte").value.trim();
     const fraco = document.getElementById("fraco").value.trim();
-  
+
     const camposVazios = []
-  
-    if(nome === "") {
+
+    if (nome === "") {
       camposVazios.push("Nome");
     }
-    if(turma === "") {
+    if (turma === "") {
       camposVazios.push("Turma");
     }
-    if(ra === "") {
+    if (ra === "") {
       camposVazios.push("Ra");
     }
-    if(forte === "") {
+    if (forte === "") {
       camposVazios.push("Forte");
     }
-    if(fraco === "") {
+    if (fraco === "") {
       camposVazios.push("Fraco");
     }
-  
-    if(camposVazios.length > 0) {
+
+    if (camposVazios.length > 0) {
       alert("Por fsvor complete as seguintes informções: " + camposVazios.join(", "));
     } else {
       alunos.innerHTML = `
@@ -84,10 +87,22 @@ apa.addEventListener('click', function() {
           </div>
       `
     }
-  
+
+    add.addEventListener('click', () => {
+      const nova = document.getElementById("inputmateria").value.trim();
+
+      if (nova === "") {
+        alert("Por favor digite sua materia");
+      } else {
+        materia.innerHTML = `
+          <div class="materiav2">
+            <div class="materiav3">
+              <p class="pp">${nova} </p>
+              <input type="number" id="nota" class="nota">
+            </div>
+          </div>
+      `
+      }
+    })
   })
-
-
-
-
 });
