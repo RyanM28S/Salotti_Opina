@@ -140,13 +140,13 @@ body {
 
 .dprofessoresavaliados {
   background-color: rgba(88, 78, 113, 0.14);
-  border: 1px solid rgba(84, 77, 93, 0.72);
+  border: 1px solid rgba(84, 77, 93, 0.377);
   text-align: center;
   flex-direction: column;
   padding: 2rem 0;
   width: 20%;
   height: 10%;
-  margin: 2rem auto;
+  margin: 2% auto;
   border-radius: 1.5rem;
   transition: all 1s ease-out;
 }
@@ -168,6 +168,54 @@ body {
   img {
     height: auto;
     width: 3rem;
+  }
+}
+
+.iconeavaliar2 {
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(187, 154, 45, 0.281);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem auto;
+  padding: 1rem 0;
+
+  img {
+    height: 2rem;
+    width: auto;
+  }
+}
+
+.iconeavaliar3 {
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(97, 187, 45, 0.192);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.7rem 0;
+
+  img {
+    height: 2.5rem;
+    width: auto;
+  }
+}
+
+.iconeavaliar4 {
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(45, 159, 187, 0.192);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.7rem 0;
+
+  img {
+    height: 2.5rem;
+    width: auto;
   }
 }
 
@@ -195,7 +243,7 @@ body {
 .dprofessores {
   display: flex;
   background-color: rgba(88, 78, 113, 0.14);
-  border: 1px solid rgba(95, 69, 159, 0.71);
+  border: 1px solid rgba(95, 69, 159, 0.418);
   width: 100%;
   height: 8rem;
   padding: 1rem 1rem 1rem 2rem;
@@ -242,7 +290,7 @@ body {
   padding: 2.5rem 1.5rem;
   line-height: 1.3rem;
   background-color: rgba(88, 78, 113, 0.14);
-  border: 1px solid rgba(84, 77, 93, 0.72);
+  border: 1px solid rgba(84, 77, 93, 0.301);
   width: 20%;
   height: 15rem;
   border-radius: 1.5rem;
@@ -267,12 +315,19 @@ body {
 }
 
 .iconecomo {
-  width: 3rem;
-  height: 3rem  ;
-  background-color: rgba(95, 69, 159, 0.342);
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(87, 45, 187, 0.192);
   border-radius: 1rem;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.5rem 0;
+
+  img {
+    height: auto;
+    width: 3rem;
+  }
 }
+
 
 
 /*fim main*/
