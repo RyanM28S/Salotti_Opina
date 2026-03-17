@@ -47,6 +47,7 @@ apa.addEventListener('click', function () {
     const ra = document.getElementById("ra").value.trim();
     const forte = document.getElementById("forte").value.trim();
     const fraco = document.getElementById("fraco").value.trim();
+    const p = document.getElementById("p")
 
     const camposVazios = []
 
@@ -77,7 +78,6 @@ apa.addEventListener('click', function () {
             <p class="nome">${nome}</p>
             <div class="ladov1">
               <p class="sub">Ra:${ra}</p>
-              <p class="sub">*</p>
               <p class="sub">Turma ${turma}</p>
             </div>
             <div class="ladov3">
@@ -86,7 +86,28 @@ apa.addEventListener('click', function () {
             </div>
           </div>
       `
+      fetch("http://localhost:3000/aluno", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: {
+          nome:nome,
+          ra:ra,
+          turma:turma,
+          forte:forte,
+          fraco:fraco
+        }
+        .then(res => res.json())
+        .then(data => {
+          p.textContent = data.mensagem
+        })
+        .catch(erro => {
+          p.textContent = erro.mensagem
+        })
+      })
     }
+
 
     add.addEventListener('click', () => {
       const nova = document.getElementById("inputmateria").value.trim();
@@ -105,4 +126,5 @@ apa.addEventListener('click', function () {
       }
     })
   })
+
 });
