@@ -16,8 +16,8 @@ async function Verifica(req, res) {
     if(verificar.length > 0) {
         return res.status(409).json({ mensagem: "Ja existente"});
     } else {
-        const [cadastrar] = awaitdb.query(
-            "INSERT INTO aluno(nome,ra,turma,forte,fraco) VALUES(?,?,?,?,?)",
+        const [cadastrar] = await db.query(
+            "INSERT INTO alunos(nome,ra,turma,pontos_fortes,pontos_fraco) VALUES(?,?,?,?,?)",
             [nome, ra, turma, forte, fraco]
         );
 
@@ -27,3 +27,5 @@ async function Verifica(req, res) {
 }
 
 roteador.post("/aluno", Verifica)
+
+export default roteador
