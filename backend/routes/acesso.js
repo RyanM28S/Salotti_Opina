@@ -19,7 +19,7 @@ async function login(req, res) {
         const usuario = encontrado[0];
 
         const token = jwt.sign(
-            { id: usuario.id },
+            { id: usuario.id, email: usuario.email, role: usuario.role },
             "segredo",
             { expiresIn: "1h" }
         )
@@ -34,8 +34,8 @@ async function login(req, res) {
 
 async function cadastrar(req, res) {
     try {
-        const { email, senha, nome } = req.body
-        const [resultado] = await db.query("INSERT INTO usuarios(nome,email,senha) VALUES(?,?,?)", [nome, email, senha])
+        const { email, senha, nome,role } = req.body
+        const [resultado] = await db.query("INSERT INTO usuarios(nome,email,senha,role) VALUES(?,?,?,?)", [nome, email, senha,role])
         if (resultado.affectedRows > 0) {
             return res.status(201).json({ mensagem: "Cadastrado com sucessso" })
         } else {
