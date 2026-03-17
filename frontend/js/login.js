@@ -35,7 +35,7 @@ function renderLogin() {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    nome: email,
+                    email: email,
                     senha: senha
                 })
             })
@@ -45,6 +45,9 @@ function renderLogin() {
                     if(data.token) {
                         localStorage.setItem("token", data.token);
                         p.textContent = "login realizado";
+                        setTimeout(()=>{
+                            window.location.href = "../html/interface.html"
+                        }, 3000)
                     } else {
                         p.textContent = data.mensagem;
                     }
@@ -70,7 +73,6 @@ function renderCadastro() {
             <input type="text" id="Email" placeholder="Email">
             <button type="submit">Enviar</button>
             <p id="p"class="white"></p>
-            <a href="teste mensagem.html">mensagem</a>
         </form>
         <button id="login" class ="bcadastro">Já tem cadastro?</button>
     `;
