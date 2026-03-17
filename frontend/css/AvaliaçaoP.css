@@ -31,7 +31,7 @@ body {
 }
 
 
-/*header*/
+
 .inicio {
   display: flex;
   color: rgba(216, 210, 225, 0.55);
@@ -74,9 +74,6 @@ body {
   font-weight: bold;
   background: rgba(15, 15, 35, 0.95);
 }
-
-/*fim header */
-/* BOTÕES DE FILTRO */
 
 .htitulo {
   color: white;
