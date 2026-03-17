@@ -35,7 +35,10 @@ async function login(req, res) {
 async function cadastrar(req, res) {
     try {
         const { email, senha, nome } = req.body
-        const [resultado] = await db.query("INSERT INTO usuarios(nome,email,senha) VALUES(?,?,?)", [nome, email, senha])
+        const [resultado] = await db.query(
+            "INSERT INTO usuarios(nome,email,senha) VALUES(?,?,?)",
+            [nome, email, senha]
+        )
         if (resultado.affectedRows > 0) {
             return res.status(201).json({ mensagem: "Cadastrado com sucessso" })
         } else {
