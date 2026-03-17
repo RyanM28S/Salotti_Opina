@@ -3,7 +3,7 @@ const main = document.getElementById("conteudo");
 function renderLogin() {
     main.innerHTML = `
         <form id="formLogin">
-            <input type="text" id="Nome" placeholder="Nome">
+            <input type="text" id="Email" placeholder="Email">
             <input type="text" id="Senha" placeholder="Senha">
             <button type="submit" class ="bLogin">Enviar</button>
             <p id="p" class="white"></p>
@@ -17,14 +17,14 @@ function renderLogin() {
     formLogin.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const nome = document.getElementById("Nome").value.trim();
+        const email = document.getElementById("Email").value.trim();
         const senha = document.getElementById("Senha").value.trim();
         const p = document.getElementById("p");
 
-        if (nome === "" && senha === "") {
+        if (email === "" && senha === "") {
             p.textContent = "Não tem nada";
-        } else if (nome === "") {
-            p.textContent = "Não tem o nome";
+        } else if (email === "") {
+            p.textContent = "Não tem o Email";
         } else if (senha === "") {
             p.textContent = "Não tem a senha";
         } else {
@@ -35,7 +35,7 @@ function renderLogin() {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    nome: nome,
+                    nome: email,
                     senha: senha
                 })
             })

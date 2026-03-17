@@ -91,13 +91,13 @@ apa.addEventListener('click', function () {
         headers: {
           "Content-Type": "application/json"
         },
-        body: {
+        body: JSON.stringify({
           nome:nome,
           ra:ra,
           turma:turma,
           forte:forte,
           fraco:fraco
-        }
+        })
         .then(res => res.json())
         .then(data => {
           p.textContent = data.mensagem
