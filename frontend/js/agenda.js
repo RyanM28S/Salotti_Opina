@@ -4,6 +4,25 @@ const alunos = document.getElementById("alunos");
 const materia = document.getElementById("materia");
 const add = document.getElementById("add");
 
+const buscar = document.getElementById("buscar");
+
+buscar.addEventListener('click', () => {
+  const alunoB = document.getElementById("alunoB").value.trim();
+
+  if(alunoB === "") {
+    alert("Prencha o campos de busca")
+  } else {
+    fetch(`http://localhost:3000/buscar?nome=${encodeURIComponent(alunoB)}`)
+    .then(res => res.json())
+    .then(data => {
+      p.textContent = data.mensagem
+    })
+    .catch(error => {
+      p.textContent = error.message
+    })
+  }
+
+})
 
 apa.addEventListener('click', function () {
   cada.classList.remove("desaparece");

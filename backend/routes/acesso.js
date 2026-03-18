@@ -23,10 +23,7 @@ async function login(req, res) {
             "segredo",
             { expiresIn: "1h" }
         )
-        res.status(200).json({
-            mensagem: "login valido",
-            token: token
-        });
+        res.status(200).json({ mensagem: "login valido", token: token });
     } else {
         res.status(401).json({ mensagem: "Usuario ou senha invalido" });
     }
@@ -34,8 +31,11 @@ async function login(req, res) {
 
 async function cadastrar(req, res) {
     try {
-        const { email, senha, nome,role } = req.body
-        const [resultado] = await db.query("INSERT INTO usuarios(nome,email,senha,role) VALUES(?,?,?,?)", [nome, email, senha,role])
+        const { email, senha, nome, role } = req.body
+        const [resultado] = await db.query(
+            "INSERT INTO usuarios(nome,email,senha,role) VALUES(?,?,?,?)",
+            [nome, email, senha, role]
+        )
         if (resultado.affectedRows > 0) {
             return res.status(201).json({ mensagem: "Cadastrado com sucessso" })
         } else {

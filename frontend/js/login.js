@@ -71,6 +71,7 @@ function renderCadastro() {
             <input type="text" id="Nome" placeholder="Nome">
             <input type="text" id="Senha" placeholder="Senha">
             <input type="text" id="Email" placeholder="Email">
+            <input type="text" placeholder="Cargo" id="Role">
             <button type="submit">Enviar</button>
             <p id="p"class="white"></p>
         </form>
@@ -86,6 +87,7 @@ function renderCadastro() {
         const nome = document.getElementById("Nome").value.trim();
         const senha = document.getElementById("Senha").value.trim();
         const email = document.getElementById("Email").value.trim();
+        const role = document.getElementById("Role").value.trim();
         const p = document.getElementById("p");
 
         const camposVazios = [];
@@ -93,6 +95,7 @@ function renderCadastro() {
         if (nome === "") camposVazios.push("nome");
         if (senha === "") camposVazios.push("senha");
         if (email === "") camposVazios.push("email");
+        if (role === "") camposVazios.push("cargo")
 
         if (camposVazios.length === 0) {
             fetch("http://localhost:3000/cadastro", {
@@ -103,7 +106,8 @@ function renderCadastro() {
                 body: JSON.stringify({
                     nome: nome,
                     senha: senha,
-                    email: email
+                    email: email,
+                    role: role
                 })
             })
 
