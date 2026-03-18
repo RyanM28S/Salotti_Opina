@@ -70,7 +70,7 @@ function renderCadastro() {
     const formCadastro = document.getElementById("formCadastro");
     const trocarLogin = document.getElementById("login");
 
-    formCadastro.addEventListener("submit", function (event) {
+    formCadastro.addEventListener("submit", (event) => {
         event.preventDefault();
 
         const nome = document.getElementById("Nome").value.trim();
@@ -115,8 +115,7 @@ function renderCadastro() {
         }
     });
 
-    trocarLogin.addEventListener("click", function (event) {
-        event.preventDefault();
+    trocarLogin.addEventListener("click", () => {
         renderLogin();
     });
 }
