@@ -6,7 +6,7 @@ const roteador = express.Router()
 
 async function buscar(req, res) {
 
-    const ra = req.query.nome
+    const ra = decodeURIComponent(req.query.nome)
 
     try {
 
@@ -22,6 +22,7 @@ async function buscar(req, res) {
     }
     catch(error) {
         res.status(500).json({ message: "Erro interno"})
+        console.error(error)
     }
 
 }
