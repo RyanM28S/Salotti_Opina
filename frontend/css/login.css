@@ -8,6 +8,7 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -15,8 +16,10 @@ body {
         radial-gradient(circle at bottom left, #06b6d433, transparent),
         #020617;
 }
+.img {
+    height: 200px;
 
-
+}
 #conteudo {
     width: 350px;
     padding: 40px;
