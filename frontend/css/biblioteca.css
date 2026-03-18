@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #5c42eb;
+    --bg-body: #f3f6ff;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --star-gold: #f59e0b;
+    --progress-bg: #e5e7eb;
+}
+.agenda {
+    display: flex;
+    color: rgba(216, 210, 225, 0.55);
+    text-decoration: none;
+    padding: 0 0 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+  }
+body {
+    background-color: #0d0d1a;
+    color: #e0e0e0;
+}
+
+.inicio {
+    display: flex;
+    color: rgba(216, 210, 225, 0.55);
+    text-decoration: none;
+    padding: 0 0 0.3rem 2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+}
+
+
+.categorias {
+    display: flex;
+    color: rgb(123, 71, 255);
+    text-underline-offset: 0.7rem;
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: rgba(123, 71, 255, 1);
+    padding: 0 0 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+}
+.professores1 {
+    display: flex;
+    color: rgba(216, 210, 225, 0.55);
+    text-decoration: none;
+    padding: 0 0 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+}
+/*header fim*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(83, 35, 172), rgb(0, 0, 0));
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.back-link {
+    color: var(--bg-body);
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header-info p {
+    color: var(--text-light);
+    margin: 4px 0 16px 0;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rating-badge {
+    background-color: #fef9c3;
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.star-icon {
+    color: var(--star-gold);
+    font-size: 28px;
+}
+
+.score-main {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.score-sub {
+    font-size: 12px;
+    color: var(--text-light);
+    display: block;
+}
+
+.aspects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+.aspect-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.aspect-label strong {
+    color: var(--primary);
+}
+
+.progress-bar {
+    height: 10px;
+    background: var(--progress-bg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+.review-item {
+    border-top: 1px solid #f3f4f6;
+    padding: 20px 0;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-name {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.review-date {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.stars {
+    color: var(--star-gold);
+    font-size: 14px;
+}
+
+.star-off {
+    color: #d1d5db;
+}
+
+.review-text {
+    font-size: 14px;
+    color: var(--text-dark);
+    margin: 10px 0;
+}
+
+.review-actions {
+    display: flex;
+    gap: 15px;
+    color: var(--text-light);
+    font-size: 14px;
+}

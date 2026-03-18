@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #0b0220, #12003a);
+  color: white;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  height: 40vw;
+  padding: 40px;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 40px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+
+.inicio {
+  display: flex;
+  color: rgba(216, 210, 225, 0.55);
+  text-decoration: none;
+  padding: 0 0 0.3rem 2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
+}
+
+
+.categorias {
+  display: flex;
+  color: rgba(216, 210, 225, 0.55);
+  text-decoration: none;
+  padding: 0 0 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
+}
+
+.professores1 {
+  display: flex;
+  color: rgb(123, 71, 255);
+  text-underline-offset: 0.7rem;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-color: rgba(123, 71, 255, 1);
+  padding: 0 0 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
+}
+
+.agenda {
+  display: flex;
+  color: rgba(216, 210, 225, 0.55);
+  text-decoration: none;
+  padding: 0 0 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
+}
+
+.htitulo {
+  color: white;
+}
+
+
+.hbutton {
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  background: rgba(100, 23, 223, 0.99);
+  color: #FFFFFF;
+  border: none;
+  font-size: 0.8rem;
+  margin: 0 0 0 26rem;
+
+}
+
+.nav1 {
+  color: rgba(216, 210, 225, 0.55);
+  text-decoration: none;
+  padding: 0 0 1rem 2rem;
+  font-size: 1rem;
+}
+
+nav {
+  background: rgba(15, 15, 35, 0.95);
+}
+
+
+/* BOTÕES DE FILTRO */
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.filtros button {
+  background: #1d1145;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filtros button:hover {
+  background: #6c4cff;
+}
+
+.filtros .ativo {
+  background: #6c4cff;
+}
+
+/* CARDS */
+
+.professores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.professores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #141033;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.materia {
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.nota {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f5d76e;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.avaliacoes {
+  margin-top: 20px;
+  color: #bbb;
+}
+
+.avaliar {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #7a5cff, #00c2ff);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-conteudo {
+  background: #141033;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+}
+
+
+
+.estrelas span {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+#enviar {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #7a5cff, #00c2ff);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+#fechar {
+  margin-top: 10px;
+  background: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}

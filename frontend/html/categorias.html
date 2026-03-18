@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias de Avaliação</title>
-    <link rel="stylesheet" href="../css/categorias.css">
+    <link id="cssP" rel="stylesheet" href="../css/categorias.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="icon" href="../img/logo2.jpg">
 </head>
 
 <body>
-    <section class="container">
-        <header class="header">
-            <h1>Categorias</h1>
-            <p>Avalie diferentes aspectos da escola</p>
-        </header>
+    <header>
+        <div class="header">
+            <div class="himg">
+                <img src="../img/logo.png" alt="" class="logosite"> 
+            </div>
+            <div class="htitulo">
+                <h2 class="htitulo">Salotti Opina</h2>
+            </div>
 
-        <div class="grid-categorias">
-            <button class="card">
-                <div class="card-top">
-                    <div class="icon-box orange"><i class="fa-solid fa-utensils"></i></div>
-                    <span class="rating">4.2</span>
-                </div>
-                <h3>Cantina</h3>
-                <p>Avalie a qualidade da comida, preços e atendimento</p>
-                <div class="divider"></div>
-                <span class="reviews">234 avaliações</span>
-            </button>
-
-            <button class="card">
-                <div class="card-top">
-                    <div class="icon-box blue"><i class="fa-solid fa-wifi"></i></div>
-                    <span class="rating">3.8</span>
-                </div>
-                <h3>Internet/Wi-Fi</h3>
-                <p>Qualidade da conexão e disponibilidade</p>
-                <div class="divider"></div>
-                <span class="reviews">189 avaliações</span>
-            </button>
-
-            <button class="card">
-                <div class="card-top">
-                    <div class="icon-box purple"><i class="fa-solid fa-book-open"></i></div>
-                    <span class="rating">4.5</span>
-                </div>
-                <h3>Biblioteca</h3>
-                <p>Acervo, ambiente e horários de funcionamento</p>
-                <div class="divider"></div>
-                <span class="reviews">156 avaliações</span>
-            </button>
-
-            <button class="card">
-                <div class="card-top">
-                    <div class="icon-box green"><i class="fa-solid fa-building"></i></div>
-                    <span class="rating">4</span>
-                </div>
-                <h3>Infraestrutura</h3>
-                <p>Salas, laboratórios e instalações em geral</p>
-                <div class="divider"></div>
-                <span class="reviews">201 avaliações</span>
-            </button>
-
-            <button class="card">
-                <div class="card-top">
-                    <div class="icon-box yellow"><i class="fa-solid fa-bus"></i></div>
-                    <span class="rating">3.9</span>
-                </div>
-                <h3>Transporte</h3>
-                <p>Acesso à escola e estacionamento</p>
-                <div class="divider"></div>
-                <span class="reviews">142 avaliações</span>
-            </button>
-
-            <button class="card">
-                <div class="card-top">
-                    <div class="icon-box pink"><i class="fa-solid fa-users-gear"></i></div>
-                    <span class="rating">4.3</span>
-                </div>
-                <h3>Atendimento</h3>
-                <p>Secretaria, coordenação e suporte ao aluno</p>
-                <div class="divider"></div>
-                <span class="reviews">178 avaliações</span>
-            </button>
+            <div class="dinputh">
+                <input type="text" name="pesquisar" placeholder="Buscar professores..." class="inputh" >
+            </div>
+            <div>
+                <button type="submit" class="hbutton"><h3>+ Nova avaliação</h3></button>
+            </div>
         </div>
-    </section>
-    <footer>
+        <nav class="nav1">
+            <a href="interface.html" class="inicio">Início</a>
+            <a href="AvaliçaoP.html" class="professores1">Professores </a>
+            <a href="categorias.html" class="categorias">Categorias </a>
+            <a href="agenda.html" class="agenda">Agenda Para Controle de Aluno</a>
+        </nav>
+    </header>
+    <main id="corpoCa">
+
+        <section class="container">
+            <header class="headeer">
+                <h1>Categorias</h1>
+                <p>Avalie diferentes aspectos da escola</p>
+            </header>
+
+            <div class="grid-categorias">
+                <button id="cantina" class="card">
+                    <div class="card-top">
+                        <div class="icon-box orange"><img src="../img/Cantina.png" alt=""></div>
+                        <span class="rating">4.2</span>
+                    </div>
+                    <h3>Cantina</h3>
+                    <p>Avalie a qualidade da comida, preços e atendimento</p>
+                    <div class="divider"></div>
+                    <span class="reviews">234 avaliações</span>
+                </button>
+
+                <button id="wi" class="card">
+                    <div class="card-top">
+                        <div class="icon-box blue"><img src="../img/Internet.png" alt=""></div>
+                        <span class="rating">2.0</span>
+                    </div>
+                    <h3>Internet/Wi-Fi</h3>
+                    <p>Qualidade da conexão e disponibilidade</p>
+                    <div class="divider"></div>
+                    <span class="reviews">997 avaliações</span>
+                </button>
+
+                <button id="bib" class="card">
+                    <div class="card-top">
+                        <div class="icon-box purple"><img src="../img/Biblioteca.png" alt=""></div>
+                        <span class="rating">4.5</span>
+                    </div>
+                    <h3>Biblioteca</h3>
+                    <p>Acervo, ambiente e horários de funcionamento</p>
+                    <div class="divider"></div>
+                    <span class="reviews">200 avaliações</span>
+                </button>
+
+                <button id="inf" class="card">
+                    <div class="card-top">
+                        <div class="icon-box green"><img src="../img/Infraestrutura.png" alt=""></div>
+                        <span class="rating">4.0</span>
+                    </div>
+                    <h3>Infraestrutura</h3>
+                    <p>Salas, laboratórios e instalações em geral</p>
+                    <div class="divider"></div>
+                    <span class="reviews">342 avaliações</span>
+                </button>
+
+                <button id="att" class="card">
+                    <div class="card-top">
+                        <div class="icon-box pink"><img src="../img/Atendimento.png" alt=""></div>
+                        <span class="rating">4.0</span>
+                    </div>
+                    <h3>Atendimento</h3>
+                    <p>Secretaria, coordenação e suporte ao aluno</p>
+                    <div class="divider"></div>
+                    <span class="reviews">208 avaliações</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
         <p>&copy; 2023 salotti Opina - Avaliações escolares transparentes.</p>
     </footer>
+    <script src="../js/categorias.js"></script>
 </body>
+
 </html>

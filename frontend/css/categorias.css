@@ -2,13 +2,74 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
 body {
-    background-color: #f0f4f8;
-    color: #334155;
-    padding: 40px 20px;
+    background-color: #0d0d1a;
+    color: #e0e0e0;
+}
+
+/*header*/
+
+.inicio {
+    display: flex;
+    color: rgba(216, 210, 225, 0.55);
+    text-decoration: none;
+    padding: 0 0 0.3rem 2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+}
+
+
+.categorias {
+    display: flex;
+    color: rgb(123, 71, 255);
+    text-underline-offset: 0.7rem;
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: rgba(123, 71, 255, 1);
+    padding: 0 0 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+}
+.professores1 {
+    display: flex;
+    color: rgba(216, 210, 225, 0.55);
+    text-decoration: none;
+    padding: 0 0 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+}
+
+.inputh {
+    display: flex;
+    justify-content: center;
+    margin-left: j;
+    padding: 0.6rem 9.5rem 0.6rem 1.8rem;
+    border: 1px solid rgba(84, 77, 93, 0.36);
+    border-radius: 0.6rem;
+    background-color: rgba(84, 77, 93, 0.36);
+}
+
+.agenda {
+    display: flex;
+    color: rgba(216, 210, 225, 0.55);
+    text-decoration: none;
+    padding: 0 0 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+  }
+
+/*fim header */
+
+body {
+    background: linear-gradient(135deg, #0b0220, #12003a);
+    color: #ffffff;
 }
 
 .container {
@@ -16,32 +77,33 @@ body {
     margin: 0 auto;
 }
 
-.header {
+.headeer {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.header h1 {
+.headeer h1 {
+    margin-top: 50px;
     font-size: 2.5rem;
-    color: #1e293b;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
-.header p {
-    color: #64748b;
+.headeer p {
+    color: #ffffff;
     font-size: 1.1rem;
 }
 
-/* Grid System */
+
 .grid-categorias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
 }
 
-/* Estilização do Card (Botão) */
+
 .card {
-    background: #ffffff;
+    background:#141033;
     border: none;
     border-radius: 15px;
     padding: 25px;
@@ -65,7 +127,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Ícones */
+
 .icon-box {
     width: 55px;
     height: 55px;
@@ -77,14 +139,30 @@ body {
     color: white;
 }
 
-.orange { background-color: #ff6b00; }
-.blue   { background-color: #2563eb; }
-.purple { background-color: #a855f7; }
-.green  { background-color: #10b981; }
-.yellow { background-color: #eab308; }
-.pink   { background-color: #db2777; }
+.orange {
+    background-color: oklch(.705 .213 47.604);
+}
 
-/* Nota do Rating */
+.blue {
+    background-color: oklch(.623 .214 259.815);
+}
+
+.purple {
+    background-color: oklch(.627 .265 303.9);
+}
+
+.green {
+    background-color: oklch(.723 .219 149.579);
+}
+
+.yellow {
+    background-color: oklch(.795 .184 86.047);
+}
+
+.pink {
+    background-color: oklch(.656 .241 354.308);
+}
+
 .rating {
     background-color: #fef9c3;
     color: #854d0e;
@@ -94,15 +172,14 @@ body {
     font-size: 0.9rem;
 }
 
-/* Textos do Card */
 .card h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #1e293b;
+    color: white;
 }
 
 .card p {
-    color: #64748b;
+    color: white;
     font-size: 0.95rem;
     line-height: 1.4;
     margin-bottom: 20px;
@@ -117,5 +194,13 @@ body {
 
 .reviews {
     font-size: 0.85rem;
-    color: #94a3b8;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    color: #ffffff;
+    font-size: 0.9rem;
 }
