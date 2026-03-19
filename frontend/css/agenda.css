@@ -16,6 +16,7 @@
 
 body {
   font-family: Arial, sans-serif;
+
 }
 
 .index {
@@ -880,4 +881,13 @@ label {
 .materiav3 input {
 
   color: white;
+}
+hr {
+  border: 0.1px solid rgb(51, 51, 51);
+  margin: 2rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem 0;
 }
