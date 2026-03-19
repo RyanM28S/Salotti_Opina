@@ -1,4 +1,7 @@
 const botoes = document.querySelectorAll(".filtros button")
+const btnExatas = document.getElementById("btnExatas")
+const corpo = document.getElementById("professores")
+const btnTodos = document.getElementById("btnTodos")
 
 botoes.forEach(botao => {
     botao.addEventListener("click", () => {
@@ -39,5 +42,90 @@ estrelas.forEach((estrela, index) => {
         })
 
     })
+
+})
+
+btnExatas.addEventListener("click",()=> {
+
+    corpo.innerHTML = `
+            <div class="card">
+                <h3>Prof. Elen</h3>
+                <p class="materia">Português</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">145 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+            </div>
+
+            <div class="card">
+                <h3>Prof. Karen</h3>
+                <p class="materia">Ed.fisíca</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">205 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+
+            </div>
+
+            <div class="card">
+                <h3>Prof. Romário</h3>
+                <p class="materia">Matemática</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">155 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+
+            </div>
+
+            <div class="card">
+                <h3>Prof. Carlos</h3>
+                <p class="materia">História</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">200 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+
+            </div>
+
+            <div class="card">
+                <h3>Prof. Luan Quaresma</h3>
+                <p class="materia">front-end</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">145 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+
+            </div>
+
+            <div class="card">
+                <h3>Profa. João lucca</h3>
+                <p class="materia">Banco de dados</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">154 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+            </div>
+    `
+})
+btnExatas.addEventlistener('click',()=> {
+
+    corpo.innerHTML = `
+
+            
+    `
+    return
+
 
 })
