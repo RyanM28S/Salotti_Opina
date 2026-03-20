@@ -17,7 +17,6 @@ body {
     background-color: #0d0d1a;
     color: #e0e0e0;
 }
-
 .inicio {
     display: flex;
     color: rgba(216, 210, 225, 0.55);
@@ -27,15 +26,20 @@ body {
     font-weight: bold;
     background: rgba(15, 15, 35, 0.95);
 }
-.agenda {
+
+
+.categorias {
     display: flex;
-    color: rgba(216, 210, 225, 0.55);
-    text-decoration: none;
+    color: rgb(123, 71, 255);
+    text-underline-offset: 0.7rem;
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: rgba(123, 71, 255, 1);
     padding: 0 0 0.3rem 1rem;
     font-size: 0.8rem;
     font-weight: bold;
     background: rgba(15, 15, 35, 0.95);
-  }
+}
+
 
 .categorias {
     display: flex;
@@ -57,12 +61,21 @@ body {
     font-weight: bold;
     background: rgba(15, 15, 35, 0.95);
 }
+.agenda {
+    display: flex;
+    color: rgba(216, 210, 225, 0.55);
+    text-decoration: none;
+    padding: 0 0 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: rgba(15, 15, 35, 0.95);
+  }
 
 /*header fim*/
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, rgb(83, 35, 172), rgb(0, 0, 0));
+    background:  #141033;
     color: var(--text-dark);
     margin: 0;
 }
