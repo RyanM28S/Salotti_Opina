@@ -57,6 +57,12 @@ body {
   background: rgba(15, 15, 35, 0.95);
 }
 
+.hbutton {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 /*fim header */
 
  /* main */
