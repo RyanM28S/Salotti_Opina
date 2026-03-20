@@ -4,26 +4,39 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+html {
+    height: 100%;
+}
 body {
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    height: 100%;
 
 }
 main {
+    height: 100%;
+
+}
+.main {
     display: flex;
+    height: 100%;
 }
 .esquerda {
     background: linear-gradient(135deg, #0F172A, #1E293B);
+    width: 50%;
+    height: 100%;
+
     
 }
 .direita {
     background-color: #F8FAFC;
+    width: 50%;
+    height: 100%;
 }
 .inicial {
     background: linear-gradient(90deg, #F97316, #FACC15);
     height: 70px;
     width: 65px;
+    color: white;
     font-size: 2rem;
     padding: 1rem;
     border-radius: 0.8rem;
