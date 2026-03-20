@@ -7,6 +7,7 @@
     <title>Configurações - Salotti Opina</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/config.css">
+    <link rel="stylesheet" href="../css/head.css">
     <link rel="icon" href="../img/logo2.jpg">
     <style>
         :root {
@@ -24,7 +25,7 @@
             color: var(--text-main);
             font-family: 'Segoe UI', Roboto, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
 
         .container {
@@ -152,12 +153,51 @@
             border-top: 1px solid var(--border-color);
             margin: 20px 0;
         }
+
+        .head {
+            margin:0;
+            width: 99vw;
+            height: 15vh;
+        }
+
+        .nav1 a {
+            list-style-type: none;
+            margin-left: 10px;
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <header class="head">
+        <div class="header">
+            <div class="himg">
+                <img src="../img/logo.png" alt="" class="logosite">
+            </div>
+            <div style="margin-right: 28vw;" class="htitulo">
+                <h2 class="htitulo">Salotti Opina</h2>
+            </div>
+
+            <div style="margin-right: 32vw;" class="dinputh">
+                <input type="text" name="pesquisar" placeholder="Buscar professores..." class="inputh">
+            </div>
+            <div>
+                <button type="submit" class="hbutton">
+                    <h3>+ Nova avaliação</h3>
+                </button>
+            </div>
+        </div>
+        <nav class="nav1">
+            <a href="interface.html" class="inicio">Início</a>
+            <a href="AvaliçaoP.html" class="professores1">Professores </a>
+            <a href="categorias.html" class="categorias">Categorias </a>
+            <a href="agenda.html" class="agenda">Agenda Para Controle de Aluno</a>
+        </nav>
+    </header>
+
+    <div style="margin-top:20vh; margin-left: -64vw;" class="container">
         <header>
             <h1>Configurações</h1>
             <p class="subtitle">Gerencie suas preferências e dados da conta</p>
