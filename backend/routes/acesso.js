@@ -3,7 +3,6 @@ import db from "./db.js"
 import jwt from "jsonwebtoken"
 import segredo from "./segredo.js"
 
-
 const roteador = express.Router()
 
 async function login(req, res) {

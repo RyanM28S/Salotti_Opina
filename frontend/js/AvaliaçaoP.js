@@ -2,6 +2,7 @@ const botoes = document.querySelectorAll(".filtros button")
 const btnExatas = document.getElementById("btnExatas")
 const btnTodos = document.getElementById("btnTodos")
 const corpo = document.getElementById("professores")
+const btnMais = document.getElementById("btnMais")
 
 botoes.forEach(botao => {
     botao.addEventListener("click", () => {
@@ -45,9 +46,83 @@ estrelas.forEach((estrela, index) => {
 
 })
 
-btnTodos.addEventListener("click",()=> {
+function renderExatas() {
     corpo.innerHTML = `
-        <div class="card">
+            <div class="card">
+                <h3>Prof. Romário</h3>
+                <p class="materia">Matématica</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">145 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+            </div>
+
+            <div class="card">
+                <h3>Prof. Pedro</h3>
+                <p class="materia">Física</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">205 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+
+            </div>
+
+            <div class="card">
+                <h3>Prof. Patricia</h3>
+                <p class="materia">Química</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">155 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+
+            </div>
+
+            <div class="card">
+                <h3>Prof. Carlos</h3>
+                <p class="materia">História</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">200 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+
+            </div>
+
+            <div class="card">
+                <h3>Prof. Luan Quaresma</h3>
+                <p class="materia">front-end</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">145 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+
+            </div>
+
+            <div class="card">
+                <h3>Profa. João lucca</h3>
+                <p class="materia">Banco de dados</p>
+
+                <span class="nota">⭐ 5.0</span>
+
+                <p class="avaliacoes">154 avaliações</p>
+
+                <button class="avaliar">Avaliar</button>
+            </div>
+    `
+};
+
+function renderTudo() {
+    corpo.innerHTML = `
+            <div class="card">
                 <h3>Prof. Elen</h3>
                 <p class="materia">Português</p>
 
@@ -117,82 +192,93 @@ btnTodos.addEventListener("click",()=> {
                 <button class="avaliar">Avaliar</button>
             </div>
     `
-})
+}
 
-
-btnExatas.addEventListener('click',()=> {
+function renderMais() {
     corpo.innerHTML = `
-    <div class="card">
-        <h3>Prof. Romário</h3>
-        <p class="materia">Matématica</p>
+            <div class="card">
+                <h3>Prof. Elen</h3>
+                <p class="materia">Português</p>
 
-        <span class="nota">⭐ 5.0</span>
+                <span class="nota">⭐ 5.0</span>
 
-        <p class="avaliacoes">145 avaliações</p>
+                <p class="avaliacoes">145 avaliações</p>
 
-        <button class="avaliar">Avaliar</button>
-    </div>
+                <button class="avaliar">Avaliar</button>
+            </div>
 
-    <div class="card">
-        <h3>Prof. Pedro</h3>
-        <p class="materia">Física</p>
+            <div class="card">
+                <h3>Prof. Karen</h3>
+                <p class="materia">Ed.fisíca</p>
 
-        <span class="nota">⭐ 5.0</span>
+                <span class="nota">⭐ 5.0</span>
 
-        <p class="avaliacoes">205 avaliações</p>
+                <p class="avaliacoes">205 avaliações</p>
 
-        <button class="avaliar">Avaliar</button>
+                <button class="avaliar">Avaliar</button>
 
-    </div>
+            </div>
 
-    <div class="card">
-        <h3>Prof. Patricia</h3>
-        <p class="materia">Química</p>
+            <div class="card">
+                <h3>Prof. Romário</h3>
+                <p class="materia">Matemática</p>
 
-        <span class="nota">⭐ 5.0</span>
+                <span class="nota">⭐ 5.0</span>
 
-        <p class="avaliacoes">155 avaliações</p>
+                <p class="avaliacoes">155 avaliações</p>
 
-        <button class="avaliar">Avaliar</button>
+                <button class="avaliar">Avaliar</button>
 
-    </div>
+            </div>
 
-    <div class="card">
-        <h3>Prof. Carlos</h3>
-        <p class="materia">História</p>
+            <div class="card">
+                <h3>Prof. Carlos</h3>
+                <p class="materia">História</p>
 
-        <span class="nota">⭐ 5.0</span>
+                <span class="nota">⭐ 5.0</span>
 
-        <p class="avaliacoes">200 avaliações</p>
+                <p class="avaliacoes">200 avaliações</p>
 
-        <button class="avaliar">Avaliar</button>
+                <button class="avaliar">Avaliar</button>
 
-    </div>
+            </div>
 
-    <div class="card">
-        <h3>Prof. Luan Quaresma</h3>
-        <p class="materia">front-end</p>
+            <div class="card">
+                <h3>Prof. Luan Quaresma</h3>
+                <p class="materia">front-end</p>
 
-        <span class="nota">⭐ 5.0</span>
+                <span class="nota">⭐ 5.0</span>
 
-        <p class="avaliacoes">145 avaliações</p>
+                <p class="avaliacoes">145 avaliações</p>
 
-        <button class="avaliar">Avaliar</button>
+                <button class="avaliar">Avaliar</button>
 
-    </div>
+            </div>
 
-    <div class="card">
-        <h3>Profa. João lucca</h3>
-        <p class="materia">Banco de dados</p>
+            <div class="card">
+                <h3>Profa. Ryan Matos</h3>
+                <p class="materia">Banco de dados</p>
 
-        <span class="nota">⭐ 5.0</span>
+                <span class="nota">⭐ 5.0</span>
 
-        <p class="avaliacoes">154 avaliações</p>
+                <p class="avaliacoes">154 avaliações</p>
 
-        <button class="avaliar">Avaliar</button>
-    </div>
+                <button class="avaliar">Avaliar</button>
+            </div>
     `
-    return
+}
 
-
+btnTodos.addEventListener('click', ()=> {
+    renderTudo();
+    return;
 })
+btnExatas.addEventListener('click', () => {
+    renderExatas();
+    return;
+})
+btnMais.addEventListener('click', () => {
+    renderMais();
+    return;
+})
+
+renderTudo();
