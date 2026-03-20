@@ -1,256 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/config.css">
-    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="../img/logo2.jpg">
-    <style>
-        :root {
-            --bg-color: #0a051a;
-            --card-bg: #161129;
-            --text-main: #ffffff;
-            --text-muted: #b3b3b3;
-            --primary-purple: #6200ee;
-            --accent-yellow: #ffeb3b;
-            --border-color: #2d264d;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-        }
-
-        p.subtitle {
-            color: var(--text-muted);
-            margin-bottom: 30px;
-        }
-
-        .settings-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            padding: 25px;
-            position: relative;
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .icon-box {
-            width: 45px;
-            height: 45px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-
-        .bg-purple {
-            background-color: #6200ee;
-        }
-
-        .bg-blue {
-            background-color: #2196f3;
-        }
-
-        .bg-green {
-            background-color: #4caf50;
-        }
-
-        .bg-pink {
-            background-color: #e91e63;
-        }
-
-        .card h3 {
-            margin: 10px 0 5px 0;
-            font-size: 1.2rem;
-        }
-
-        .card p {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            background: #251e3d;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            color: white;
-            outline: none;
-        }
-
-        .btn-save {
-            background-color: var(--primary-purple);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-            float: right;
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .btn-save:hover {
-            opacity: 0.9;
-        }
-
-        .status-badge {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: var(--accent-yellow);
-            color: black;
-            padding: 2px 8px;
-            border-radius: 10px;
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px solid var(--border-color);
-            margin: 20px 0;
-        }
-
-        .head {
-            margin:0;
-            width: 99vw;
-            height: 15vh;
-        }
-
-        .nav1 a {
-            list-style-type: none;
-            margin-left: 10px;
-            color: white;
-            text-decoration: none;
-        }
-    </style>
 </head>
-
 <body>
 
-    <header class="head">
-        <div class="header">
-            <div class="himg">
-                <img src="../img/logo.png" alt="" class="logosite">
-            </div>
-            <div style="margin-right: 28vw;" class="htitulo">
-                <h2 class="htitulo">Salotti Opina</h2>
-            </div>
-
-            <div style="margin-right: 32vw;" class="dinputh">
-                <input type="text" name="pesquisar" placeholder="Buscar professores..." class="inputh">
-            </div>
-            <div>
-                <button type="submit" class="hbutton">
-                    <h3>+ Nova avaliação</h3>
-                </button>
-            </div>
+    <header class="navbar">
+        <div class="logo">
+            <i class="fas fa-bullhorn"></i> Salotti Opina
         </div>
-        <nav class="nav1">
-            <a href="interface.html" class="inicio">Início</a>
-            <a href="AvaliçaoP.html" class="professores1">Professores </a>
-            <a href="categorias.html" class="categorias">Categorias </a>
-            <a href="agenda.html" class="agenda">Agenda Para Controle de Aluno</a>
-            <a href="config.html" class="agenda">Configurações</a>
+        <nav>
+            <ul>
+                <a href="interface.html" class="active">Início</a>
+                <a href="AvaliçaoP.html" class="active">Professores </a>
+                <a href="categorias.html" class="active">Categorias </a>
+                <a href="agenda.html" class="active">Agenda Para Controle de Aluno</a>
+                <li class="active">Configurações</li>
+            </ul>
         </nav>
+        <button class="btn-nova-aval">Voltar a tela de Login</button>
     </header>
 
-    <div style="margin-top:20vh; margin-left: -64vw;" class="container">
-        <header>
-            <h1>Configurações</h1>
-            <p class="subtitle">Gerencie suas preferências e dados da conta</p>
-        </header>
+    <main class="container">
+        <h1>Configurações</h1>
+        <p class="subtitle">Gerencie sua conta e preferências do sistema</p>
 
-        <div class="settings-grid">
+        <div class="grid-config">
             <div class="card">
-                <div class="icon-box bg-purple"><i class="fas fa-user"></i></div>
+                <div class="card-header">
+                    <div class="icon-box purple">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
                 <h3>Meu Perfil</h3>
-                <p>Altere seu nome de exibição e e-mail de contato.</p>
-                <input type="text" placeholder="Nome" value="Usuário Salotti">
-                <input type="email" placeholder="E-mail" value="usuario@escola.com.br">
+                <p>Altere seu nome, foto de perfil e informações básicas.</p>
+                <button class="btn-edit">Editar</button>
             </div>
 
             <div class="card">
-                <div class="status-badge">ATIVO</div>
-                <div class="icon-box bg-blue"><i class="fas fa-bell"></i></div>
+                <div class="card-header">
+                    <div class="icon-box blue">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                </div>
                 <h3>Notificações</h3>
-                <p>Receba alertas sobre novas avaliações da infraestrutura e cantina.</p>
-                <select>
-                    <option>Sempre notificar</option>
-                    <option>Apenas resumo semanal</option>
-                    <option>Desativado</option>
-                </select>
+                <p>Escolha quais alertas você deseja receber no e-mail.</p>
+                <button class="btn-edit">Configurar</button>
             </div>
 
             <div class="card">
-                <div class="icon-box bg-green"><i class="fas fa-lock"></i></div>
+                <div class="card-header">
+                    <div class="icon-box green">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                </div>
+                <h3>Segurança</h3>
+                <p>Gerencie sua senha e autenticação em duas etapas.</p>
+                <button class="btn-edit">Alterar</button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-box orange">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                </div>
                 <h3>Privacidade</h3>
-                <p>Defina como seu nome aparece para os professores e outros alunos.</p>
-                <label style="font-size: 0.8rem; color: #b3b3b3;">
-                    <input type="checkbox" checked> Manter avaliações anônimas
-                </label>
-            </div>
-
-            <div class="card">
-                <div class="icon-box bg-pink"><i class="fas fa-palette"></i></div>
-                <h3>Aparência</h3>
-                <p>Personalize o tema e contraste da interface do Salotti Opina.</p>
-                <select>
-                    <option>Modo Escuro (Padrão)</option>
-                    <option>Modo Claro</option>
-                    <option>Alto Contraste</option>
-                </select>
+                <p>Controle quem pode ver suas avaliações e perfil.</p>
+                <button class="btn-edit">Privacidade</button>
             </div>
         </div>
+    </main>
 
-        <button class="btn-save">
-            <i class="fas fa-check"></i> Salvar Alterações
-        </button>
-    </div>
+    <footer>
+        © 2026 Salotti Opina - Avaliações escolares transparentes.
+    </footer>
 
 </body>
-
 </html>
