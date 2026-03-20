@@ -6,26 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header><img class="img" src="../img/logo.png" alt="logo"></header>
-    <main id="conteudo" class =  "conteudo2">
+    <header></header>
+    <main>
+        <div class="esquerda">
+            <h1 class="inicial">S</h1>
+            <h1 class="titulo">Salotti Opina</h1>
+            <p class="segundaria">A voz dos alunos. Avalie professores, compartilhe <br> experiências e ajude a construir uma escola <br>  melhor.</p>
+            <div class="topicos">
+                <div>
+                    <h1 class="professores">127+</h1>
+                    <p class="s1">Professores</p>
+                </div>
+                <div>
+                    <h1 class="avaliações">1.5k+</h1>
+                    <p class="s1">Avaliações</p> 
+                </div>
+                <div>
+                    <h1 class="alunos">892</h1>
+                    <p class="s1">Alunos</p>
+                </div>
+            </div>
+        </div>
 
-        <h2 style="color:white; text-align:center;">Cadastro</h2>
 
-        <form id="formCadastro">
-            <input type="text" placeholder="Nome" id="Nome">
-            <input type="email" placeholder="Email" id="Email">
-            <input type="password" placeholder="Senha" id="Senha">
-            <input type="text" placeholder="Cargo" id="Role">
+        <div class="direita">
+            <h1>Bem-vindo de volta!</h1>
+            <p>Entre para continuar avaliando</p>
+            <input type="text" placeholder="Seu e-mail"><br>
+            <input type="text" placeholder="Sua senha"><br>
+            <button>Entrar</button>
+            <p>Não tem conta? <a href=""> Cadastre-se</a></p>
 
-            <button type="submit">Enviar</button>
-        </form>
 
-        <button id="login" class="bcadastro">
-            Já tem conta? Entrar
-        </button>
+        </div>
+    </main>
     <footer></footer>
 
     <script src="../js/login.js"></script>
