@@ -8,6 +8,7 @@ const buscar = document.getElementById("buscar");
 
 buscar.addEventListener('click', () => {
   const alunoB = document.getElementById("alunoB").value.trim();
+  const p = document.getElementById("p");
 
   if(alunoB === "") {
     alert("Prencha o campos de busca")
@@ -54,10 +55,10 @@ apa.addEventListener('click', function () {
             <input type="text" id="fraco"  class="fraco" placeholder="Descreva os pontos fraco do Aluno ">
           </div>
         </div>
-        <button id="cada" >Cadastrar Aluno</button>
+        <button id="cadaAL" >Cadastrar Aluno</button>
   `
 
-  const cadaA = document.getElementById("cada");
+  const cadaA = document.getElementById("cadaAL");
   cadaA.addEventListener('click', () => {
 
     const nome = document.getElementById("nome").value.trim();
@@ -104,7 +105,7 @@ apa.addEventListener('click', function () {
               <p class="fraco">${fraco}</p>
             </div>
           </div>
-      `
+      `;
       fetch("http://localhost:3000/aluno", {
         method: "POST",
         headers: {
@@ -117,13 +118,13 @@ apa.addEventListener('click', function () {
           forte:forte,
           fraco:fraco
         })
-        .then(res => res.json())
-        .then(data => {
-          p.textContent = data.mensagem
-        })
-        .catch(erro => {
-          p.textContent = erro.mensagem
-        })
+      })
+      .then(res => res.json())
+      .then(data => {
+        p.textContent = data.mensagem
+      })
+      .catch(erro => {
+        p.textContent = erro.mensagem
       })
     }
 
@@ -138,7 +139,7 @@ apa.addEventListener('click', function () {
           <div class="materiav2">
             <div class="materiav3">
               <p class="pp">${nova} </p>
-              <input type="number" id="nota" class="nota">
+              <input type="number" min="0" max="10" step="1" value="10" id="nota" class="nota">
             </div>
           </div>
       `

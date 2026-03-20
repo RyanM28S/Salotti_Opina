@@ -33,7 +33,6 @@ const estrelas = document.querySelectorAll(".estrelas span")
 estrelas.forEach((estrela, index) => {
 
     estrela.addEventListener("click", () => {
-
         estrelas.forEach((e, i) => {
             if (i <= index) {
                 e.style.opacity = "1"
