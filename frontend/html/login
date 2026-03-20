@@ -1,0 +1,188 @@
+<header>
+	<img class="img" src="../img/logo.png" alt="logo">
+</header>
+    <main id="conteudo" class =  "conteudo2">
+
+
+        <h2 style="color:white; text-align:center;">Cadastro</h2>
+
+
+        <form id="formCadastro">
+            <input type="text" placeholder="Nome" id="Nome">
+            <input type="email" placeholder="Email" id="Email">
+            <input type="password" placeholder="Senha" id="Senha">
+            <input type="text" placeholder="Cargo" id="Role">
+
+
+            <button type="submit">Enviar</button>
+        </form>
+
+
+        <button id="login" class="bcadastro">
+            Já tem conta? Entrar
+        </button>
+    <footer></footer>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background: radial-gradient(circle at top right, #7c3aed33, transparent),
+        radial-gradient(circle at bottom left, #06b6d433, transparent),
+        #020617;
+}
+.img {
+    height: 200px;
+
+
+}
+#conteudo {
+    width: 350px;
+    padding: 40px;
+    border-radius: 16px;
+
+
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+
+
+    border: 1px solid #1e293b;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
+}
+
+
+
+h2 {
+    color: #c084fc;
+    text-align: center;
+}
+
+
+
+#formCadastro input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+
+
+    background: #020617;
+    color: #e2e8f0;
+
+
+    border: 1px solid #1e293b;
+}
+
+
+#formCadastro input::placeholder {
+    color: #64748b;
+}
+
+
+
+#formCadastro button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+
+    background: linear-gradient(90deg, #7c3aed, #06b6d4);
+    color: white;
+    font-weight: bold;
+
+
+    transition: 0.3s;
+    margin-left: 36%;
+    margin-top: 15px;
+}
+
+
+#formCadastro button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #7c3aed66;
+}
+
+
+
+#cadastro {
+    background: none;
+    border: none;
+    color: #38bdf8;
+    cursor: pointer;
+}
+
+
+.bcadastro{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+
+    background: linear-gradient(90deg, #7c3aed, #06b6d4);
+    color: white;
+    font-weight: bold;
+
+
+    transition: 0.3s;
+}
+.bLogin{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+
+    background: linear-gradient(90deg, #7c3aed, #06b6d4);
+    color: white;
+    font-weight: bold;
+
+
+    transition: 0.3s;
+    margin-left: 36%;
+    margin-top: 15px;
+}
+
+
+
+#formLogin input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+
+
+    background: #020617;
+    color: #e2e8f0;
+
+
+    border: 1px solid #1e293b;
+}
+
+
+#formLogin input::placeholder {
+    color: #64748b;
+}
+
+
+.white{
+    color: white
+}
