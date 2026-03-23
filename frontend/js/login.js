@@ -49,7 +49,7 @@ function renderLogin() {
                             window.location.href = "../html/interface.html"
                         }, 3000)
                     } else {
-                        p.textContent = data.mensagem;
+                        p.textContent = data.message;
                     }
                     
                 })
@@ -121,7 +121,7 @@ function renderCadastro() {
                     p.textContent = "usuario cadastrado com sucesso"
                 })
                 .catch(error => {
-                    p.textContent = error.mensagem;
+                    p.textContent = error.message;
                 });
 
         } else {
