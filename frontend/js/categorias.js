@@ -2,7 +2,6 @@ const cantina = document.getElementById('cantina');
 const prin = document.getElementById('corpoCa');
 const cssP = document.getElementById("cssP");
 
-
 cantina.addEventListener('click', () => {
     prin.innerHTML = `
     <div class="container">
@@ -90,7 +89,6 @@ cantina.addEventListener('click', () => {
             </section>
         </div>
     `
-
     cssP.href = "../css/cantina.css"
 })
 const wi = document.getElementById('wi');
@@ -261,7 +259,6 @@ bib.addEventListener('click', () => {
                 </div>
             </section>
         </div>
-
     `
     cssP.href = "../css/biblioteca.css"
 })
@@ -342,7 +339,6 @@ inf.addEventListener('click', () => {
         </section>
     </div>
     `
-
     cssP.href = "../css/infra.css"
 })
 const at = document.getElementById('att');
