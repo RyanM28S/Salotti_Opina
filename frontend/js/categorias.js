@@ -17,7 +17,7 @@ cantina.addEventListener('click', () => {
                 <div class="rating-badge">
                     <span class="star-icon">★</span>
                     <div class="score-box">
-                        <span class="score-main">4.2</span>
+                        <span class="score-maini">4.2</span>
                         <span class="score-sub">de 5.0</span>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ wi.addEventListener('click', () => {
             <div class="rating-badge">
                 <span class="star-icon">★</span>
                 <div class="score-box">
-                    <span class="score-main">2.0</span>
+                    <span class="score-maini">2.0</span>
                     <span class="score-sub">de 5.0</span>
                 </div>
             </div>
@@ -195,7 +195,7 @@ bib.addEventListener('click', () => {
                 <div class="rating-badge">
                     <span class="star-icon">★</span>
                     <div class="score-box">
-                        <span class="score-main">4.5</span>
+                        <span class="score-maini">4.5</span>
                         <span class="score-sub">de 5.0</span>
                     </div>
                 </div>
@@ -281,7 +281,7 @@ inf.addEventListener('click', () => {
             <div class="rating-badge">
                 <span class="star-icon">★</span>
                 <div class="score-box">
-                    <span class="score-main">4.0</span>
+                    <span class="score-maini">4.0</span>
                     <span class="score-sub">de 5.0</span>
                 </div>
             </div>
@@ -362,7 +362,7 @@ at.addEventListener('click', () => {
             <div class="rating-badge">
                 <span class="star-icon">★</span>
                 <div class="score-box">
-                    <span class="score-main">4.0</span>
+                    <span class="score-maini">4.0</span>
                     <span class="score-sub">de 5.0</span>
                 </div>
             </div>

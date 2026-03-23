@@ -3,7 +3,6 @@ import db from "./db.js"
 import jwt from "jsonwebtoken"
 import segredo from "./segredo.js"
 
-
 const roteador = express.Router()
 
 async function login(req, res) {
@@ -19,7 +18,7 @@ async function login(req, res) {
         const usuario = encontrado[0];
 
         const token = jwt.sign(
-            { id: usuario.id },
+            { id: usuario.id, email: usuario.email, role: usuario.role },
             "segredo",
             { expiresIn: "1h" }
         )

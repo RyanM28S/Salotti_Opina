@@ -6,6 +6,7 @@
     <title>Avaliação de Professores</title>
     <link rel="stylesheet" href="../css/AvaliaçaoP.css">
     <link rel="stylesheet" href="../css/head.css">
+    <link rel="icon" href="../img/logo2.jpg">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
     <header>
         <div class="header">
             <div class="himg">
-                <img src="" alt=""> 
+                <img src="../img/logo.png" alt="" class="logosite"> 
             </div>
             <div class="htitulo">
                 <h2 class="htitulo">Salotti Opina</h2>
@@ -30,22 +31,24 @@
             <a href="interface.html" class="inicio">Início</a>
             <a href="AvaliçaoP.html" class="professores1">Professores </a>
             <a href="categorias.html" class="categorias">Categorias </a>
+            <a href="agenda.html" class="agenda">Agenda Para Controle de Aluno</a>
+            <a href="config.html" class="agenda">Configurações</a>
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container" id="conteudo">
 
         <h2>Avaliação de Professores</h2>
 
         <div class="filtros">
-            <button class="ativo">Todos</button>
-            <button>Exatas</button>
+            <button id="btnTodos" class="ativo">Todos</button>
+            <button id="btnExatas">Exatas</button>
             <button>Humanas</button>
-            <button>Linguagens</button>
-            <button>Saúde</button>
+            <button>Técnico</button>
+            <button id="btnMais" >Mais Avaliados</button>
         </div>
 
-        <div class="professores">
+        <div id="professores" class="professores">
 
             <div class="card">
                 <h3>Prof. Elen</h3>
@@ -119,7 +122,6 @@
 
         </div>
 
-        <canvas id="grafico"></canvas>
 
 
         <div id="modal" class="modal">

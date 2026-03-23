@@ -5,11 +5,18 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-font-family: Arial;
-background: linear-gradient(135deg,#0b0220,#12003a);
-color: white;
-margin:0;
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #0b0220, #12003a);
+  color: white;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  height: 40vw;
+  padding: 40px;
 }
 
 .container {
@@ -24,7 +31,7 @@ margin:0;
 }
 
 
-/*header*/
+
 .inicio {
   display: flex;
   color: rgba(216, 210, 225, 0.55);
@@ -57,19 +64,19 @@ margin:0;
   font-weight: bold;
   background: rgba(15, 15, 35, 0.95);
 }
-/*fim header */
-/* BOTÕES DE FILTRO */
+
+.agenda {
+  display: flex;
+  color: rgba(216, 210, 225, 0.55);
+  text-decoration: none;
+  padding: 0 0 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
+}
 
 .htitulo {
   color: white;
-}
-
-.inputh {
-  margin: 0.1rem 0 0 36rem;
-  padding: 0.6rem 9.5rem 0.6rem 1.8rem;
-  border: 1px solid rgba(84, 77, 93, 0.36);
-  border-radius: 0.6rem;
-  background-color: rgba(84, 77, 93, 0.36);
 }
 
 .hbutton {
@@ -89,6 +96,7 @@ margin:0;
   padding: 0 0 1rem 2rem;
   font-size: 1rem;
 }
+
 nav {
   background: rgba(15, 15, 35, 0.95);
 }
@@ -122,6 +130,12 @@ nav {
 }
 
 /* CARDS */
+
+.professores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
 
 .professores {
   display: grid;

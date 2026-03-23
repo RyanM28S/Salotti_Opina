@@ -12,6 +12,9 @@ body {
 }
 
 /*header*/
+
+
+
 .inicio {
   display: flex;
   padding: 0 0 0.3rem 2rem;
@@ -44,6 +47,22 @@ body {
   background: rgba(15, 15, 35, 0.95);
 }
 
+.agenda {
+  display: flex;
+  color: rgba(216, 210, 225, 0.55);
+  text-decoration: none;
+  padding: 0 0 0.3rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(15, 15, 35, 0.95);
+}
+
+.hbutton {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 /*fim header */
 
  /* main */
@@ -63,7 +82,7 @@ body {
   margin: 2rem 1rem;
   background: rgba(179, 136, 255, 0.77);
   font-size: 1rem;
-  border: none;
+  border: 1;
 }
 
 .dbemvindo {
@@ -81,10 +100,12 @@ body {
 
 .d1bemvindo p {
   display: block;
-  margin: 2rem auto 0 auto;
-  max-width: 30rem;
+  margin: 1rem auto 0 auto;
+  max-width: 45rem;
   line-height: 1.8rem;
   color: rgba(216, 210, 225, 0.55);
+  font-size: 1.3rem;
+  font-weight:bold;
 }
 
 .destaque {
@@ -96,72 +117,189 @@ body {
 
 .dbavaliar {
   display: flex;
-  margin: 0 auto;
+  margin: auto;
 }
 
-.bavaliar {
+.bavaliar { 
   border-radius: 0.8rem;
   padding: 1rem 1.8rem;
   color: white;
-  background: linear-gradient(135deg, #7c4dff 0%, #6200ea 100%);
+  background: linear-gradient(135deg, #7c4dff 0%, #6200ea 100%), url(../img/estrelabrancaicon.png);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover, 1.5rem;
+  background-position: center, 2rem center;
   font-size: 0.9rem;
   border: none;
   cursor: pointer;
+  box-shadow: 0 0 4px 0.1px #7c4dff;
+  transition: all 0.5s ease-out;
+  h3 {
+  padding-left: 2rem;
+  }
+}
+
+.bavaliar:hover {
+  transform:translateY(-3px) ;
+  background: linear-gradient(135deg, #684dff 0%, #6d00ea 100%), url(../img/estrelabrancaicon.png);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover, 1.5rem;
+  background-position: center, 2rem center;
+  box-shadow: 1px 1px 4px 2px #684dff88;
 }
 
 .bcategorias {
   border-radius: 0.8rem;
   padding: 1rem 1.8rem;
   color: white;
-  background-color: rgba(88, 78, 113, 0.14);
+  background: linear-gradient(135deg, #64549141 0%, #5d497a48 100%), url(../img/janelaicon.png);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover, 1.5rem;
+  background-position: center, 2rem center;
   border: 1px solid rgba(84, 77, 93, 0.72);
   margin: 0 1rem;
   font-size: 0.9rem;
   cursor: pointer;
+  transition: all 0.5s ease-out;
+  h3 {
+    padding-left: 2rem;
+  }
+}
+
+.bcategorias:hover {
+  transform:translateY(-3px) ;
+  background: linear-gradient(135deg, #64549141 0%, #5d497a48 100%), url(../img/janelaicon.png);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover, 1.5rem;
+  background-position: center, 2rem center;
+  box-shadow: 1px 1px 4px 2px #64549141;
 }
 
 .dcentral {
   display: flex;
   text-align: center;
+  gap: 5rem;
+  padding: 0 3rem 0 2rem;
 }
 
 .dprofessoresavaliados {
   background-color: rgba(88, 78, 113, 0.14);
-  border: 1px solid rgba(84, 77, 93, 0.72);
+  border: 1px solid rgba(84, 77, 93, 0.377);
   text-align: center;
   flex-direction: column;
   padding: 2rem 0;
-  width: 20%;
-  height: 10%;
-  margin: 2rem auto;
+  width:50%;
+  height: 20%;
+  margin: 2% auto;
   border-radius: 1.5rem;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
+
+  h2 {
+
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  p {
+
+    font-size: 1rem;
+    color: rgba(216, 210, 225, 0.55);
+  }
 }
 
 .dprofessoresavaliados:hover {
   border: 0.1rem solid rgba(95, 69, 159, 0.952);
-  width: 22%;
-  height: 12%;
+  width: 70%;
+  height: 10%;
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
 }
 
 .iconeavaliar {
-  width: 3rem;
-  height: 3rem;
-  background-color: rgba(95, 69, 159, 0.342);
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(87, 45, 187, 0.192);
   border-radius: 1rem;
   margin: 0 auto 0.5rem auto;
+  padding: 0.5rem 0;
+
+  img {
+    height: auto;
+    width: 3rem;
+  }
+}
+
+.iconeavaliar2 {
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(187, 154, 45, 0.281);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem auto;
+  padding: 1rem 0;
+
+  img {
+    height: 2rem;
+    width: auto;
+  }
+}
+
+.iconeavaliar3 {
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(97, 187, 45, 0.192);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.7rem 0;
+
+  img {
+    height: 2.5rem;
+    width: auto;
+  }
+}
+
+.iconeavaliar4 {
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(45, 159, 187, 0.192);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.7rem 0;
+
+  img {
+    height: 2.5rem;
+    width: auto;
+  }
 }
 
 .vertodos {
   display: flex;
   padding: 1rem 2rem 0.5rem 2rem;
-}
+  align-items: center;
+  img {
+    height: auto;
+    width: 3rem;
+  }
 
-.vertodos a {
-  text-decoration: none;
-  margin-left: auto;
-  font-size: 1.6rem;
-  justify-content: center;
+  a {
+    text-decoration: none;
+    margin-left: auto;
+    font-size: 1.4rem;
+  }
 }
 
 
@@ -172,7 +310,7 @@ body {
 .dprofessores {
   display: flex;
   background-color: rgba(88, 78, 113, 0.14);
-  border: 1px solid rgba(95, 69, 159, 0.71);
+  border: 1px solid rgba(95, 69, 159, 0.418);
   width: 100%;
   height: 8rem;
   padding: 1rem 1rem 1rem 2rem;
@@ -211,45 +349,93 @@ body {
 .dpassos {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  
+  gap: 4rem;
 }
 
 .passos {
   padding: 2.5rem 1.5rem;
   line-height: 1.3rem;
   background-color: rgba(88, 78, 113, 0.14);
-  border: 1px solid rgba(84, 77, 93, 0.72);
+  border: 1px solid rgba(84, 77, 93, 0.301);
   width: 20%;
   height: 15rem;
   border-radius: 1.5rem;
   text-align: center;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
+
+   h2 {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  p{
+    color: rgba(255,255,255,0.7);
+    font-size: 0.8rem;
+  }
 }
 
 .passos:hover {
   border: 0.1rem solid rgba(95, 69, 159, 0.71);
   width: 22%;
   height: 16rem;
+
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
 }
 
-.passos h2 {
-  margin-bottom: 1rem;
-  
-}
 
-.passos p{
-  color: rgba(255,255,255,0.7);
-  font-size: 0.9rem;
-}
 
 .iconecomo {
-  width: 3rem;
-  height: 3rem  ;
-  background-color: rgba(95, 69, 159, 0.342);
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(87, 45, 187, 0.192);
   border-radius: 1rem;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.5rem 0;
+
+  img {
+    height: auto;
+    width: 3rem;
+  }
 }
+
+.iconecomo2 {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(87, 45, 187, 0.192);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.5rem 0;
+
+  img {
+    height: auto;
+    width: 3rem;
+  }
+}
+
+.iconecomo3 {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(87, 45, 187, 0.192);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.7rem 0;
+  transition: 1s ease-out;
+  img {
+    height: auto;
+    width: 2.5rem;
+  }
+}
+
+
 
 
 /*fim main*/

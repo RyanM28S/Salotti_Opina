@@ -17,8 +17,14 @@
 }
 
 .htitulo {
+    padding-left: 0.2rem;
     color: white;
 }
+
+.logosite {
+    width: auto;
+    height: 2rem;
+  }
 
 .dinputh {
     flex: 1;
@@ -43,7 +49,7 @@
     border: none;
     font-size: 0.8rem;
     margin-left: auto;  
-
+    cursor: pointer;
 }
 
 .nav1 {

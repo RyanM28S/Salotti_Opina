@@ -3,11 +3,10 @@ const main = document.getElementById("conteudo");
 function renderLogin() {
     main.innerHTML = `
         <form id="formLogin">
-            <input type="text" id="Nome" placeholder="Nome">
+            <input type="text" id="Email" placeholder="Email">
             <input type="text" id="Senha" placeholder="Senha">
             <button type="submit" class ="bLogin">Enviar</button>
             <p id="p" class="white"></p>
-            <a href="teste mensagem.html">mensagem</a>
         </form>
         <button id="cadastro">Não tem cadastro?</button>
     `;
@@ -18,14 +17,14 @@ function renderLogin() {
     formLogin.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const nome = document.getElementById("Nome").value.trim();
+        const email = document.getElementById("Email").value.trim();
         const senha = document.getElementById("Senha").value.trim();
         const p = document.getElementById("p");
 
-        if (nome === "" && senha === "") {
+        if (email === "" && senha === "") {
             p.textContent = "Não tem nada";
-        } else if (nome === "") {
-            p.textContent = "Não tem o nome";
+        } else if (email === "") {
+            p.textContent = "Não tem o Email";
         } else if (senha === "") {
             p.textContent = "Não tem a senha";
         } else {
@@ -36,7 +35,7 @@ function renderLogin() {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    nome: nome,
+                    email: email,
                     senha: senha
                 })
             })
@@ -46,6 +45,9 @@ function renderLogin() {
                     if(data.token) {
                         localStorage.setItem("token", data.token);
                         p.textContent = "login realizado";
+                        setTimeout(()=>{
+                            window.location.href = "../html/interface.html"
+                        }, 3000)
                     } else {
                         p.textContent = data.message;
                     }
@@ -69,9 +71,9 @@ function renderCadastro() {
             <input type="text" id="Nome" placeholder="Nome">
             <input type="text" id="Senha" placeholder="Senha">
             <input type="text" id="Email" placeholder="Email">
+            <input type="text" placeholder="Cargo" id="Role">
             <button type="submit">Enviar</button>
             <p id="p"class="white"></p>
-            <a href="teste mensagem.html">mensagem</a>
         </form>
         <button id="login" class ="bcadastro">Já tem cadastro?</button>
     `;
@@ -79,12 +81,13 @@ function renderCadastro() {
     const formCadastro = document.getElementById("formCadastro");
     const trocarLogin = document.getElementById("login");
 
-    formCadastro.addEventListener("submit", function (event) {
+    formCadastro.addEventListener("submit", (event) => {
         event.preventDefault();
 
         const nome = document.getElementById("Nome").value.trim();
         const senha = document.getElementById("Senha").value.trim();
         const email = document.getElementById("Email").value.trim();
+        const role = document.getElementById("Role").value.trim();
         const p = document.getElementById("p");
 
         const camposVazios = [];
@@ -92,6 +95,7 @@ function renderCadastro() {
         if (nome === "") camposVazios.push("nome");
         if (senha === "") camposVazios.push("senha");
         if (email === "") camposVazios.push("email");
+        if (role === "") camposVazios.push("cargo")
 
         if (camposVazios.length === 0) {
             fetch("http://localhost:3000/cadastro", {
@@ -102,7 +106,8 @@ function renderCadastro() {
                 body: JSON.stringify({
                     nome: nome,
                     senha: senha,
-                    email: email
+                    email: email,
+                    role: role
                 })
             })
 
@@ -124,8 +129,7 @@ function renderCadastro() {
         }
     });
 
-    trocarLogin.addEventListener("click", function (event) {
-        event.preventDefault();
+    trocarLogin.addEventListener("click", () => {
         renderLogin();
     });
 }
